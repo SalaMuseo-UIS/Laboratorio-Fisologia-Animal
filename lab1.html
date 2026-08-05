@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fisiología Animal 20073 - Lab 1 - TIC, Búsqueda Bibliográfica y Proyecto Semestral (2026-2)</title>
+
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+mermaid.initialize({ 
+    startOnLoad: true, 
+    theme: 'base',
+    securityLevel: 'loose'
+});
+</script>
+
+<style>
+    /* ESTILO ACADÉMICO UIS */
+    body {
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.8;
+        color: #333;
+        background-color: #f0f2f5;
+        margin: 0;
+        padding: 40px;
+    }
+    .main-container {
+        max-width: 1100px;
+        margin: auto;
+        background-color: #ffffff;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    /* ENCABEZADO PROFESIONAL */
+    .header-banner {
+        background-color: #2c3e50;
+        color: white;
+        padding: 50px;
+        text-align: center;
+        border-bottom: 5px solid #27ae60;
+    }
+    .header-banner h1 { margin: 0; font-size: 2.3em; text-transform: uppercase; letter-spacing: 1px; }
+    .header-banner h2 { font-size: 1.2em; font-weight: 300; margin-top: 10px; color: #bdc3c7; }
+    
+    /* CONTENIDO */
+    .content-section { padding: 40px 60px; border-bottom: 1px solid #f0f0f0; }
+    .section-title {
+        color: #2c3e50;
+        border-left: 6px solid #27ae60;
+        padding-left: 15px;
+        margin-bottom: 25px;
+        font-size: 1.6em;
+        font-weight: 700;
+    }
+    h3 { color: #34495e; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-top: 35px; }
+    p { margin-bottom: 1.5em; text-align: justify; }
+    a { color: #2980b9; text-decoration: none; font-weight: bold; }
+    a:hover { text-decoration: underline; color: #1abc9c; }
+
+    /* BLOQUES DE CONCEPTOS, EJEMPLOS Y ADVERTENCIAS */
+    .concept-box {
+        background-color: #f8f9fa;
+        border-left: 5px solid #3498db;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 4px;
+    }
+    .project-box {
+        background-color: #f4f6f7;
+        border: 2px solid #2980b9;
+        padding: 25px;
+        margin: 20px 0;
+        border-radius: 8px;
+    }
+    .example-box {
+        background-color: #e8f8f5;
+        border-left: 5px solid #1abc9c;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 4px;
+        font-size: 0.95em;
+    }
+    .example-header {
+        font-weight: 700;
+        color: #16a085;
+        text-transform: uppercase;
+        font-size: 0.9em;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .warning-box {
+        background-color: #fdf2e9;
+        border: 1px solid #e67e22;
+        border-left: 6px solid #e67e22;
+        padding: 20px;
+        margin: 25px 0;
+        border-radius: 4px;
+    }
+    .warning-header {
+        font-weight: 700;
+        color: #d35400;
+        text-transform: uppercase;
+        font-size: 0.9em;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    /* ESPACIOS PARA PANTALLAZOS */
+    .screenshot-box {
+        border: 2px dashed #95a5a6;
+        background-color: #eaeded;
+        padding: 35px 20px;
+        text-align: center;
+        margin: 20px 0;
+        border-radius: 6px;
+        color: #7f8c8d;
+    }
+    .screenshot-box .legend {
+        display: block;
+        margin-top: 15px;
+        font-size: 0.9em;
+        font-weight: 600;
+        color: #2c3e50;
+    }
+
+    /* BLOQUES DE ENTREGABLE */
+    .analysis-box {
+        background-color: #fffdf0;
+        border: 1px solid #f1c40f;
+        border-left: 6px solid #f1c40f;
+        padding: 25px;
+        margin: 30px 0;
+        border-radius: 4px;
+    }
+    .analysis-header {
+        font-weight: 700;
+        color: #9a7d0a;
+        text-transform: uppercase;
+        font-size: 0.85em;
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    /* TABLAS */
+    table { width: 100%; border-collapse: collapse; margin: 25px 0; font-size: 0.92em; }
+    th { background-color: #2c3e50; color: white; padding: 12px; text-align: left; border-bottom: 2px solid #ddd; }
+    td { padding: 12px; border-bottom: 1px solid #eee; vertical-align: top; }
+    .table-striped tbody tr:nth-child(odd) { background-color: #f9f9f9; }
+
+    /* BIBLIOGRAFÍA */
+    .biblio-section { background-color: #f9f9f9; padding: 30px 40px; font-size: 0.9em; }
+    .bib-item { margin-bottom: 12px; padding-left: 25px; text-indent: -25px; }
+</style>
+</head>
+<body>
+
+<div class="main-container">
+    <div class="header-banner">
+        <h1>UNIVERSIDAD INDUSTRIAL DE SANTANDER</h1>
+        <h2>Escuela de Biología | Asignatura: Fisiología Animal (20073) | Semestre 2026-2</h2>
+        <p>Docente: Prof. Sergio Marchant, Ph.D.</p>
+    </div>
+    
+    <div class="content-section">
+        <h2 class="section-title">Práctico 1: Herramientas TIC, Búsqueda Bibliográfica y Mediación Humana</h2>
+        
+        <p>
+            La escritura científica es una competencia transversal en la formación de todo biólogo e investigador (Lorenzetti & Ghersi, 2018). Este espacio, concebido como un laboratorio de docencia dentro de la reforma estructural del programa, tiene como propósito fundamental sentar las bases metodológicas para sus futuras investigaciones. Cuando la búsqueda bibliográfica se ejecuta con rigor, permite que un trabajo científico sea divulgado en revistas indexadas de corriente principal, garantizando que los hallazgos puedan ser verificados de forma independiente por la comunidad internacional. Una fase ineludible de cualquier investigación es la revisión del estado del arte: contrastar hipótesis, evaluar metodologías previas y contextualizar los descubrimientos.
+        </p>
+        <p>
+            En la actualidad, las Tecnologías de la Información y Comunicación (TIC) ofrecen potentes herramientas para gestionar la inmensidad de la literatura. Sin embargo, la rápida adopción de la Inteligencia Artificial (IA) en la academia plantea desafíos complejos. Por un lado, las herramientas especializadas aceleran la síntesis textual; por otro, los modelos de lenguaje de propósito general (LLMs) introducen riesgos críticos como la <strong>alucinación de datos y la invención de referencias falsas</strong> (Alkaissi & McFarlane, 2023). Adicionalmente, el investigador contemporáneo debe enfrentar los <strong>sesgos algorítmicos y editoriales</strong> inherentes a los motores de búsqueda, los cuales pueden marginar la literatura científica regional. La rigurosidad exige que la tecnología sea entendida como un asistente técnico y jamás como un sustituto de la <strong>mediación humana, el criterio ético y la verificación crítica</strong> (Kasneci et al., 2023).
+        </p>
+
+        <h3>OBJETIVOS DE APRENDIZAJE</h3>
+        <ul>
+            <li><strong>Seleccionar y delimitar</strong> un tema de investigación fisiológica que servirá de eje articulador para el proyecto semestral.</li>
+            <li><strong>Evaluar y comparar</strong> el alcance de diferentes bases de datos científicas (WOS, Scopus, PubMed, Google Scholar) y gestores bibliográficos (Mendeley, Zotero, EndNote).</li>
+            <li><strong>Diseñar y ejecutar</strong> ecuaciones de búsqueda avanzada utilizando sintaxis precisa, marcas de campo y operadores booleanos en Web of Science aplicadas a su proyecto de clase.</li>
+            <li><strong>Administrar y automatizar</strong> el flujo bibliográfico personal (PDFs, metadatos, citación automática en MS Word) acorde con formatos de revistas internacionales.</li>
+            <li><strong>Desarrollar criterio ético y analítico</strong> respecto al uso de Inteligencia Artificial en la academia, distinguiendo entre modelos generativos y plataformas RAG, mitigando sesgos algorítmicos y garantizando la autoría humana reflexiva ante el riesgo de alucinaciones.</li>
+        </ul>
+    </div>
+
+<div class="content-section">
+        <h2 class="section-title">1. Contexto e Inscripción del Proyecto Semestral</h2>
+        
+        <p>
+            Esta guía no es un simple ejercicio técnico aislado. El trabajo que realicen hoy constituye la <strong>Etapa 1 de su Proyecto Integrador de Semestre</strong>. 
+            El objetivo de hoy no es buscar únicamente los artículos que van a leer, sino construir una <strong>base de datos bibliográfica amplia y robusta</strong> sobre su tema general. A partir de la exploración de esta gran colección, ustedes podrán delimitar y definir el enfoque específico que le darán a su revisión bibliográfica.
+        </p>
+        <p>
+            La biblioteca digital que construyan hoy en Mendeley será la materia prima fundamental para las siguientes fases del laboratorio:
+        </p>
+        <ul style="line-height: 1.8;">
+            <li style="margin-bottom: 10px;">
+                <strong>Etapa 2 (Disección):</strong> Análisis crítico metodológico de 3 artículos seleccionados de su base de datos. <br>
+                <span style="color: #c0392b; font-weight: bold;">Requisito indispensable:</span> Estos 3 artículos elegidos para la disección deben ser <strong>estudios netamente experimentales</strong> (literatura primaria original que contenga claramente las secciones de Métodos, Resultados y Discusión). <strong>No se aceptan artículos de revisión (reviews)</strong> para esta etapa, ya que el objetivo central es evaluar el diseño, ejecución y análisis experimental directo en fisiología animal.
+            </li>
+            <li style="margin-bottom: 10px;">
+                <strong>Etapa 3 (Minireview - 10%):</strong> Escritura de un artículo de revisión científica estructurado sobre el sub-tema que lograron delimitar, integrando la literatura encontrada y siguiendo rigurosamente el formato de la revista PLOS ONE.
+            </li>
+            <li>
+                <strong>Etapa 4 (Divulgación - 10%):</strong> Creación de un archivo audiovisual o digital basado en los hallazgos de su Minireview, diseñado para el público de la nueva exhibición <em>"Descubriendo cómo funcionan los animales"</em> del Museo de Historia Natural de la UIS.
+            </li>
+        </ul>
+
+        <div class="project-box">
+            <h3 style="margin-top: 0; color: #2980b9;">📥 Instrucciones de Inscripción (Obligatorio)</h3>
+            <p>
+                Deberán organizarse en parejas. Cada pareja debe seleccionar uno de los temas listados a continuación, los cuales corresponden a los capítulos teóricos del curso que profundizaremos mediante literatura primaria.
+            </p>
+            <p style="font-weight: bold; color: #c0392b; font-size: 1.1em; text-align: center; border: 2px dashed #c0392b; padding: 10px; margin: 15px 0;">
+                REGLA ESTRICTA: Ningún grupo puede repetir los temas a trabajar. La asignación es por orden de llegada.
+            </p>
+          <p style="text-align: center; font-size: 1.1em;">
+                <strong>Acceda aquí al documento de inscripción:</strong> <br>
+                <a href="https://docs.google.com/spreadsheets/d/1SsYPuU09UUmoZ8j8Abpw-lcywJGfgJA9JfrFmv4RaN4/edit?usp=sharing" target="_blank" style="color: #27ae60; font-weight: bold; text-decoration: underline;">[Haz clic aquí para abrir la tabla de inscripción en Google Sheets]</a>
+            </p>
+    </div>
+        </div>
+    <div class="content-section">
+        <h2 class="section-title">2. El Ecosistema de Búsqueda Bibliográfica: Análisis Comparativo</h2>
+        <p>
+            Una vez inscrito su tema en Google Sheets, el siguiente paso es buscar la literatura. No todas las fuentes de datos bibliográficos son iguales. El sesgo de cobertura geográfica, la velocidad de indexación y los criterios de inclusión dictan qué literatura estará disponible (Mongeon & Paul-Hus, 2016; Martín-Martín et al., 2018).
+        </p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Plataforma</th>
+                    <th>Tipo de Cobertura y Control de Calidad</th>
+                    <th>Uso Ideal y Ejemplo en Fisiología Animal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="https://www.webofscience.com" target="_blank"><strong>Web of Science (WOS)</strong></a></td>
+                    <td>Curaduría altamente selectiva (~21,000 revistas). Excluye literatura gris y revistas depredadoras. Usa el Factor de Impacto (JIF).</td>
+                    <td><strong>Uso:</strong> Análisis de vanguardia y revisiones sistemáticas.<br><em>Ejemplo:</em> Buscar artículos de alto impacto sobre los mecanismos genéticos de adaptación a la hipoxia en aves de gran altitud.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.scopus.com" target="_blank"><strong>Scopus</strong></a></td>
+                    <td>Más amplia que WOS (~24,000+ revistas). Mayor cobertura multidisciplinaria y regional. Usa CiteScore.</td>
+                    <td><strong>Uso:</strong> Búsquedas que incluyen revistas regionales de ecofisiología.<br><em>Ejemplo:</em> Investigar las tasas metabólicas de anfibios neotropicales publicados en revistas latinoamericanas indexadas.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank"><strong>PubMed</strong></a></td>
+                    <td>Especializada exclusivamente en Ciencias de la Vida y Biomedicina (NLM/NIH). Filtro biomédico estricto.</td>
+                    <td><strong>Uso:</strong> Fisiología celular, endocrinología y modelos animales biomédicos.<br><em>Ejemplo:</em> Analizar las vías de señalización de la insulina en modelos murinos (ratones).</td>
+                </tr>
+                <tr>
+                    <td><a href="https://scholar.google.com" target="_blank"><strong>Google Scholar</strong></a></td>
+                    <td>Motor de búsqueda masivo no curado. Incluye desde artículos de máximo impacto hasta literatura no arbitrada.</td>
+                    <td><strong>Uso:</strong> Búsqueda exploratoria inicial o localización rápida de PDFs.<br><em>Ejemplo:</em> Encontrar el PDF de acceso abierto de un artículo antiguo sobre termorregulación usando su título exacto.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="content-section">
+        <h2 class="section-title">3. Ecuaciones de Búsqueda Avanzada Aplicadas a su Tema</h2>
+        <p>
+            Para encontrar exactamente lo que necesitamos en bases de datos como WOS, debemos traducir nuestro tema elegido en el Google Sheets a una estrategia de búsqueda sólida. Combinaremos etiquetas de campo (ej. <code>TS</code> para Tema/Título/Resumen) con <strong>operadores booleanos</strong> (AND, OR, NOT) y truncadores (como el asterisco <code>*</code>).
+        </p>
+
+        <div class="example-box">
+            <span class="example-header"> EJEMPLOS PRÁCTICOS DE SINTAXIS BOOLEANA</span>
+            <ul style="margin-top: 5px;">
+                <li><strong>Operador de truncamiento (*):</strong> Buscar <code>tropic*</code> arrojará resultados para <em>tropic, tropical, tropics</em>.</li>
+                <li><strong>Operador de exclusión (NOT):</strong> Si su tema es tolerancia térmica en ranas, pero no les interesan los estudios toxicológicos sobre contaminación: <br><code>TS=(frog* AND thermal tolerance) NOT TS=(pollution OR toxicology)</code>.</li>
+                <li><strong>Operador de proximidad (NEAR/x):</strong> Encuentra palabras separadas por un máximo de "x" palabras. Si su tema es animales en buceo (mamíferos marinos): <br><code>TS=(marine mammal*) NEAR/5 TS=(diving response)</code>.</li>
+            </ul>
+        </div>
+    </div>
+<div class="concept-box" style="margin-top: 30px;">
+            <h3 style="color: #2980b9; margin-top: 0; border-bottom: none;">Uso Avanzado del Query Builder (Constructor de Consultas)</h3>
+            <p>
+                El <strong>Query Builder</strong> de Web of Science permite diseñar búsquedas bibliográficas de alta precisión. Para dominar esta herramienta, es necesario combinar etiquetas de campo, operadores lógicos y caracteres especiales directamente en la caja de previsualización (<em>Query Preview</em>).
+            </p>
+            
+            <h4 style="color: #34495e; margin-bottom: 10px;">1. Etiquetas de Campo (Field Tags)</h4>
+            <p style="margin-bottom: 15px; font-size: 0.95em;">Indican al motor de búsqueda en qué sección específica del documento debe buscar su término:</p>
+            <table style="margin-top: 0;">
+                <thead>
+                    <tr>
+                        <th style="width: 15%;">Etiqueta</th>
+                        <th style="width: 25%;">Significado</th>
+                        <th style="width: 60%;">Uso Ideal y Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>TS</strong></td>
+                        <td>Topic (Tema)</td>
+                        <td>Busca simultáneamente en título, resumen y palabras clave. Es la etiqueta más utilizada.<br><em>Ejemplo:</em> <code>TS=(thermoregulation)</code></td>
+                    </tr>
+                    <tr>
+                        <td><strong>TI</strong></td>
+                        <td>Title (Título)</td>
+                        <td>Restringe la búsqueda exclusivamente al título del documento.<br><em>Ejemplo:</em> <code>TI=(reptile*)</code></td>
+                    </tr>
+                    <tr>
+                        <td><strong>AU</strong></td>
+                        <td>Author (Autor)</td>
+                        <td>Rastrea toda la literatura publicada por un investigador específico.<br><em>Ejemplo:</em> <code>AU=(Navas CA)</code></td>
+                    </tr>
+                    <tr>
+                        <td><strong>SO</strong></td>
+                        <td>Publication Titles</td>
+                        <td>Filtra artículos publicados únicamente dentro de una revista científica.<br><em>Ejemplo:</em> <code>SO=(Journal of Experimental Biology)</code></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4 style="color: #34495e; margin-bottom: 10px;">2. Operadores Booleanos</h4>
+            <ul style="font-size: 0.95em; margin-bottom: 25px;">
+                <li style="margin-bottom: 8px;"><strong>AND (Intersección):</strong> Exige que ambos términos estén presentes en el documento. <em>Ejemplo:</em> <code>TS=(diving) AND TS=(mammal)</code></li>
+                <li style="margin-bottom: 8px;"><strong>OR (Unión):</strong> Amplía los resultados agrupando sinónimos. <em>Ejemplo:</em> <code>TS=(frog OR toad OR anuran)</code></li>
+                <li><strong>NOT (Exclusión):</strong> Elimina documentos que contengan un término no deseado. <em>Ejemplo:</em> <code>TS=(metabolism) NOT TS=(plant*)</code></li>
+            </ul>
+
+            <h4 style="color: #34495e; margin-bottom: 10px;">3. Comodines y Búsqueda Exacta (Caracteres Especiales)</h4>
+            <p style="font-size: 0.95em; margin-bottom: 15px;">Para no perder artículos debido a variaciones gramaticales, plurales o diferencias ortográficas (ej. inglés británico vs. americano), WOS utiliza símbolos especiales:</p>
+            <table style="margin-top: 0; background-color: #fff;">
+                <tbody>
+                    <tr>
+                        <td style="width: 20%; text-align: center; font-size: 1.2em;"><strong>*</strong> <br><span style="font-size: 0.7em;">(Asterisco)</span></td>
+                        <td>Representa <strong>cero o múltiples caracteres</strong>. Es el más común para plurales o sufijos.<br><em>Ejemplo:</em> <code>behav*</code> buscará <em>behavior, behaviour, behavioral</em>.</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%; text-align: center; font-size: 1.2em;"><strong>$</strong> <br><span style="font-size: 0.7em;">(Signo Peso)</span></td>
+                        <td>Representa <strong>cero o un carácter</strong>. Ideal para diferencias ortográficas sutiles.<br><em>Ejemplo:</em> <code>colo$r</code> buscará <em>color</em> (cero caracteres extra) y <em>colour</em> (un carácter extra).</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%; text-align: center; font-size: 1.2em;"><strong>?</strong> <br><span style="font-size: 0.7em;">(Interrogación)</span></td>
+                        <td>Representa <strong>exactamente un carácter</strong>.<br><em>Ejemplo:</em> <code>wom?n</code> buscará <em>woman</em> y <em>women</em>.</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%; text-align: center; font-size: 1.2em;"><strong>" "</strong> <br><span style="font-size: 0.7em;">(Comillas)</span></td>
+                        <td>Fuerza la búsqueda de una <strong>frase exacta</strong>, impidiendo que el motor separe las palabras.<br><em>Ejemplo:</em> <code>TS=("climate change")</code> no buscará "climate" y "change" por separado.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4 style="color: #34495e; margin-bottom: 10px;">4. Anidación (Agrupación con Paréntesis)</h4>
+            <p style="font-size: 0.95em; margin-bottom: 25px;">
+                Al igual que en las matemáticas, los paréntesis <strong>( )</strong> dictan el orden lógico en que se ejecuta la búsqueda. Todo lo que esté dentro del paréntesis se procesa primero. <br>
+                <em>Ejemplo de ecuación compleja:</em> <code>TS=(("marine mammal*" OR whale*) AND "diving response")</code> <br>
+                <em>Lectura:</em> Primero agrupa mamíferos marinos o ballenas, y luego cruza ese gran grupo exclusivamente con la frase exacta "diving response".
+            </p>
+
+            <h4 style="color: #34495e; margin-bottom: 10px;">5. Ensamblaje en la interfaz</h4>
+            <p style="font-size: 0.95em; margin-bottom: 10px;">
+                La interfaz gráfica del Query Builder está diseñada para facilitar este proceso:
+            </p>
+            <ul style="font-size: 0.95em; margin-bottom: 0;">
+                <li style="margin-bottom: 8px;"><strong>Cajas desplegables e Inserción automática:</strong> Puede seleccionar la etiqueta deseada en el menú desplegable (ej. <em>All Fields</em>), escribir su término y hacer clic en el botón <strong>"Add to query"</strong> para que el sistema escriba el código por usted.</li>
+                <li style="margin-bottom: 8px;"><strong>Escritura Directa:</strong> Los usuarios avanzados pueden teclear su ecuación compleja (con paréntesis, comodines y booleanos) directamente en el recuadro grande.</li>
+                <li style="margin-bottom: 8px;"><strong>Filtros de Fecha:</strong> Utilice el botón <strong>"+ Add date range"</strong> debajo de la caja de previsualización para limitar rápidamente los resultados a los últimos años de publicación sin necesidad de escribir código.</li>
+                <li><strong>Historial de Sesiones (Session Queries):</strong> Todas las búsquedas que ejecute quedan guardadas temporalmente. Puede combinar resultados de búsquedas anteriores utilizando el símbolo numeral en el Query Builder. Por ejemplo, teclear <code>#1 AND #2</code> fusionará los resultados de su primera y segunda búsqueda.</li>
+            </ul>
+        </div>
+        <div class="concept-box" style="margin-top: 30px;">
+            <h3 style="color: #2980b9; margin-top: 0; border-bottom: none;">Exportación de Resultados desde WOS hacia Mendeley</h3>
+            <p>
+                Una vez que su ecuación de búsqueda avanzada arroje los resultados esperados, el siguiente paso crítico es extraer esa información de Web of Science y trasladarla a su gestor bibliográfico (Mendeley) de forma estructurada, garantizando que no se pierdan metadatos clave como los resúmenes (abstracts), los autores y los enlaces DOI.
+            </p>
+            
+            <h4 style="color: #34495e; margin-bottom: 10px;">Pasos para una exportación y captura exitosa:</h4>
+            <ol style="font-size: 0.95em; margin-bottom: 20px;">
+                <li style="margin-bottom: 10px;"><strong>Selección de Documentos:</strong> Revise los resultados de su búsqueda y marque las casillas ubicadas a la izquierda de cada artículo que considere pertinente para su proyecto (como se observa en los ítems 1 y 2 de la imagen de referencia).</li>
+                <li style="margin-bottom: 10px;"><strong>Despliegue del Menú de Exportación:</strong> Ubique el botón o menú desplegable de <strong>Exportación</strong> (generalmente sobre la lista de resultados). Al hacer clic, se mostrará una lista con múltiples opciones de plataformas y formatos de salida.</li>
+                <li style="margin-bottom: 10px;"><strong>Selección del Formato Compatible:</strong> Para garantizar una sincronización perfecta con Mendeley, <strong>no</strong> elija formatos de texto plano o Excel. En su lugar, seleccione <strong>"RIS (other reference software)"</strong> o <strong>"BibTeX"</strong>. Estos son los formatos universales de intercambio bibliográfico.</li>
+                <li style="margin-bottom: 10px;"><strong>Configuración del Contenido (¡Muy Importante!):</strong> Tras elegir RIS o BibTeX, el sistema le preguntará qué cantidad de información desea descargar. Asegúrese de cambiar la opción predeterminada a <strong>"Full Record" (Registro Completo)</strong>. Si omite este paso, los artículos se guardarán sin el resumen, lo cual dificultará su posterior lectura y selección. Al finalizar, haga clic en <em>Export</em> para descargar el archivo a su computador.</li>
+            </ol>
+
+           <div class="screenshot-box" style="padding: 20px;">
+    <img src="fig1.png" alt="Menú de exportación en Web of Science" style="max-width: 100%; height: auto; border-radius: 4px;">
+    <span class="legend" style="margin-top: 10px;">Leyenda: Figura 1. Menú de exportación en Web of Science tras seleccionar documentos específicos. Se destacan las opciones RIS y BibTeX, idóneas para migrar los metadatos a Mendeley.</span>
+</div>
+            
+            <h4 style="color: #34495e; margin-top: 25px; margin-bottom: 10px;">Importación final en Mendeley</h4>
+            <p style="font-size: 0.95em; margin-top: 5px;">
+                Para finalizar el proceso, abra <strong>Mendeley Reference Manager</strong>. En la esquina superior izquierda, haga clic en <strong>"Add new"</strong>, seleccione <strong>"Import library"</strong> y luego elija el formato correspondiente al archivo que acaba de descargar (RIS o BibTeX). Busque el archivo en su carpeta de descargas y ábralo; todos sus artículos aparecerán estructurados automáticamente en su biblioteca personal, listos para ser citados en Word.
+            </p>
+        </div>
+    <div class="content-section">
+        <h2 class="section-title">4. Gestores de Referencias Bibliográficas (TIC)</h2>
+        <p>
+            Un gestor no es simplemente un organizador de archivos en la nube; es la herramienta que garantiza la reproducibilidad de la citación y ahorra cientos de horas en el formateo de los manuscritos como el Minireview que entregarán en la Etapa 3 (Lorenzetti & Ghersi, 2018). Usaremos <strong>Mendeley</strong> debido a su excelente integración con MS Word y su capacidad para crear grupos de trabajo colaborativo.
+        </p>
+        
+        <h3>Instrucciones de Instalación: Mendeley y Mendeley Cite</h3>
+        <ol>
+            <li><strong>Descargar Mendeley Reference Manager:</strong> Ingrese a <a href="https://www.mendeley.com/download-reference-manager" target="_blank">la página oficial de descargas</a> y seleccione la versión correspondiente a su sistema operativo (Windows, Mac o Linux). Instale el programa e inicie sesión creando una cuenta gratuita de Elsevier.</li>
+            <li><strong>Instalar el Web Importer (Opcional recomendado):</strong> Para capturar referencias directamente desde su navegador, instale la extensión Mendeley Web Importer disponible para <a href="https://www.mendeley.com/reference-management/web-importer" target="_blank">Chrome, Firefox o Edge</a>.</li>
+            <li><strong>Instalar Mendeley Cite en MS Word:</strong> Abra Microsoft Word. Diríjase a la pestaña <em>Insertar</em> > <em>Obtener complementos</em>. Busque "Mendeley Cite" y haga clic en agregar. También puede instalarlo directamente desde la <a href="https://marketplace.microsoft.com/es-es/product/WA104382081?tab=Overview" target="_blank">Microsoft AppSource</a>.</li>
+        </ol>
+
+        <h3>Flujo de Trabajo en Microsoft Word con Mendeley Cite</h3>
+        <p>Una vez instalado, el complemento Mendeley Cite se convierte en su panel de control para gestionar citas directamente mientras redacta su manuscrito. A continuación, se detallan sus funciones principales:</p>
+        
+        <div class="concept-box">
+            <ul style="font-size: 0.95em; line-height: 1.7;">
+                <li><strong>Activación del Panel:</strong> Diríjase a la pestaña <strong>"Referencias"</strong> en la cinta superior de Word y haga clic en el ícono rojo de <strong>Mendeley Cite</strong> para desplegar el panel lateral derecho.</li>
+                <li><strong>Insertar Citas (Pestaña <em>References</em>):</strong> Aquí podrá visualizar toda su biblioteca. Seleccione las casillas de los artículos que desea citar en un párrafo específico y presione el botón <em>Insert Citation</em>. Si acaba de agregar nuevos artículos a su cuenta desde el navegador, utilice el botón <strong>"Refresh"</strong> (o las flechas circulares) para sincronizarlos de inmediato.</li>
+                <li><strong>Cambiar Formato (Pestaña <em>Citation Settings</em>):</strong> Le permite alternar rápidamente entre diferentes estilos de citación (como APA, Vancouver, o el formato numérico de Science). Cualquier cambio realizado aquí reformateará automáticamente todo el documento.</li>
+                <li><strong>Generar la Bibliografía Final:</strong> Cuando haya terminado de redactar su texto, posicione el cursor en la sección final de su documento. Haga clic en el <strong>menú de los tres puntos (...)</strong> ubicado en la esquina superior derecha del panel de Mendeley y seleccione <strong>"Insert Bibliography"</strong>.</li>
+            </ul>
+        </div>
+
+        <div class="screenshot-box" style="padding: 20px;">
+            <img src="fig2.png" alt="Interfaz de Mendeley Cite en Microsoft Word" style="max-width: 100%; height: auto; border-radius: 4px;">
+            <span class="legend" style="margin-top: 10px;">Leyenda: Figura 2. Interfaz de Microsoft Word con la pestaña "Referencias" activa y el panel lateral de Mendeley Cite desplegado, destacando el menú secundario (...) necesario para insertar la bibliografía.</span>
+        </div>
+
+        <div class="example-box">
+            <span class="example-header"> EJEMPLO DE AUTOMATIZACIÓN DE CITAS EN MS WORD</span>
+            <p style="margin-top: 5px;">
+                Al utilizar la pestaña <em>Citation Settings</em> del plug-in, pueden cambiar la apariencia de sus citas en el texto con un solo clic sin reescribir nada. 
+                <br><br>
+                <strong>Estilo de citas numéricas (ej. Science o PLOS ONE):</strong> 
+                <br><em>"Los cocodrilos presentan un corazón tetracameral con un foramen de Panizza que permite derivar la sangre durante el buceo 1, 2]."</em>
+                <br><br>
+                <strong>Estilo de autor y año (ej. Harvard o APA):</strong> 
+                <br><em>"Los cocodrilos presentan un corazón tetracameral con un foramen de Panizza que permite derivar la sangre durante el buceo (Marchant, 2017; Pérez et al., 2021)."</em>
+            </p>
+        </div>
+    </div>
+<div class="content-section">
+        <h2 class="section-title">5. Inteligencia Artificial en la Academia: Tipologías, Sesgos y Alucinaciones</h2>
+        
+        <p>
+            El ecosistema de la Inteligencia Artificial (IA) ha evolucionado rápidamente, pero es crucial entender que <strong>no todas las herramientas operan bajo los mismos principios</strong>. Para la investigación científica, debemos distinguir entre modelos de lenguaje probabilísticos y motores de búsqueda académicos asistidos por IA.
+        </p>
+
+        <h3>5.1. Modelos Generativos vs. IA Académica (RAG)</h3>
+        <p>
+            Herramientas especializadas como <strong>Consensus, Elicit, Leapspace o Scite.ai</strong> representan un nivel de desarrollo diseñado para la academia. Estas plataformas utilizan una arquitectura llamada RAG (<em>Retrieval-Augmented Generation</em>). Esto significa que la IA está anclada a bases de datos científicas reales (como Semantic Scholar o PubMed). En lugar de inventar respuestas, primero recuperan artículos verídicos, extraen la información y luego usan el modelo de lenguaje para resumir los hallazgos citando literatura existente.
+        </p>
+        <p>
+            Por el contrario, plataformas de propósito general como <strong>ChatGPT o Claude</strong> (en sus versiones estándar no conectadas a bases de datos externas), aunque son sumamente potentes para analizar, traducir y estructurar textos que usted mismo les proporcione, presentan riesgos críticos si se usan como motores de búsqueda primarios.
+        </p>
+
+        <div class="warning-box">
+            <span class="warning-header"> ADVERTENCIA CRÍTICA: LA "FABRICACIÓN" DE DATOS EN LLMs</span>
+            <p>
+                Los Grandes Modelos de Lenguaje (LLMs) puros son motores de predicción de palabras, <strong>no bibliotecas científicas factibles</strong> (Kasneci et al., 2023). Cuando se les pide citar literatura para su marco teórico sin conectarlos a un buscador, suelen incurrir en la <strong>alucinación</strong>: inventan títulos plausibles, combinan autores reales con revistas falsas y generan códigos DOI inexistentes (Alkaissi & McFarlane, 2023).
+            </p>
+            <p><strong>Citar un artículo alucinado por una IA en su Minireview será considerado fraude académico severo.</strong></p>
+        </div>
+
+        <div class="example-box">
+            <span class="example-header"> CASO DE ESTUDIO: ANATOMÍA DE UNA ALUCINACIÓN</span>
+            <p style="margin-top: 5px;">Se le pidió a ChatGPT referencias sobre termorregulación en reptiles andinos (Tema Clase #6). El modelo generó la siguiente cita (en perfecto formato APA):</p>
+            <blockquote style="background-color: #fff; padding: 10px; border-left: 3px solid #e74c3c; font-family: monospace;">
+                Navas, C. A., & Gómez, P. (2022). Thermal biology of high-altitude lizards in the Colombian Andes. <em>Journal of Thermal Biology</em>, 45(2), 112-125. https://doi.org/10.1016/j.jtherbio.2022.04.005
+            </blockquote>
+            <p><strong>El problema real:</strong> Aunque el Dr. Carlos Navas (Navas, C. A.) es un investigador real y experto en ecofisiología térmica, <strong>este artículo no existe</strong>. La revista <em>Journal of Thermal Biology</em> es real, pero el volumen 45 no corresponde al año 2022, y el código DOI arroja un error "Not Found" en CrossRef. La IA fabricó una mentira altamente convincente.</p>
+        </div>
+
+        <h3>5.2. Ética Algorítmica y Sesgos Editoriales</h3>
+        <p>
+            Aun utilizando IAs académicas o bases de datos prestigiosas, existe un problema subyacente que un investigador ético debe reconocer: <strong>el sesgo algorítmico y editorial</strong>. 
+        </p>
+        
+        <div class="concept-box" style="border-left: 5px solid #8e44ad;">
+            <h4 style="margin-top: 0; color: #8e44ad;">¿Es ético limitar nuestra búsqueda solo a lo que la IA o el algoritmo deciden mostrarnos?</h4>
+            <p style="margin-bottom: 10px;">
+                Muchas herramientas de IA y grandes bases de datos (como WOS) priorizan revistas de las gigantes casas editoriales (Elsevier, Springer, Wiley) y literatura exclusivamente en inglés del Norte Global. Esto margina sistemáticamente revistas regionales, bases como SciELO o Redalyc, y valiosas investigaciones locales escritas en español.
+            </p>
+            <p style="margin-bottom: 0;">
+                En disciplinas como la biología y la ecofisiología, donde los ecosistemas locales son la base del conocimiento, ignorar fuentes regionales introduce un <strong>sesgo de selección</strong>. La tecnología es una herramienta de eficiencia, pero confiar ciegamente en el "Top 10 de relevancia" que dicta un algoritmo devalúa el conocimiento producido en nuestra propia región.
+            </p>
+        </div>
+
+        <h3>5.3. El Principio del "Human-in-the-Loop" (HITL)</h3>
+        <p>
+            Las IAs, incluidas las especializadas en ciencia, son excelentes copilotos, pero la <strong>mediación humana experta es insustituible</strong>:
+        </p>
+        <ul>
+            <li><strong>Verificación Estricta:</strong> Cada cita generada debe ser verificada manualmente buscando el DOI en <a href="https://www.crossref.org" target="_blank">CrossRef</a> o validando el PDF original.</li>
+            <li><strong>Conciencia de Sesgo:</strong> Pregúntese siempre si los resultados que le entrega la herramienta están omitiendo perspectivas regionales o estudios taxonómicos fundamentales que podrían no estar en revistas <em>Q1</em> anglosajonas.</li>
+            <li><strong>Criterio Biológico:</strong> La IA no posee comprensión fisiológica ni evolutiva profunda. Si un resumen automático afirma que un organismo aeróbico tolera la anoxia indefinidamente, solo su criterio y formación académica pueden detectar ese absurdo biológico.</li>
+        </ul>
+    </div>
+
+   <div class="content-section">
+        <h2 class="section-title">6. Flujo de Trabajo (Pipeline) del Laboratorio y Paso a Paso</h2>
+        
+        <div style="text-align: center; margin: 30px 0;">
+            <div class="mermaid">
+            graph TD
+                classDef select fill:#d5f5e3,stroke:#27ae60,stroke-width:2px;
+                classDef wos fill:#e8f8f5,stroke:#1abc9c,stroke-width:2px;
+                classDef men fill:#fadbd8,stroke:#c0392b,stroke-width:2px;
+                classDef ai fill:#fcf3cf,stroke:#f1c40f,stroke-width:2px;
+                classDef hum fill:#d6eaf8,stroke:#2980b9,stroke-width:2px;
+                
+                Z[0. Inscripción del Tema <br> Google Sheets del Curso] --> A
+                A[1. Búsqueda Avanzada en WOS <br> Alineada a su tema elegido] -->|Exportar BibTeX| B[2. Importación a Mendeley <br> Descarga de PDFs via DOI]
+                B --> C{¿Uso de IA para sintesis?}
+                C -- SÍ --> D[3. Generación Asistida por IA]
+                C -- NO --> E[4. Redacción Directa]
+                D --> F[⚠️ VERIFICACIÓN HUMANA <br> Control de alucinaciones y lectura de PDF]
+                F --> G[5. Citación en MS Word via Plug-in <br> Formatos Science / Harvard]
+                E --> G
+                
+                class Z select;
+                class A wos;
+                class B men;
+                class D,C ai;
+                class F,G hum;
+            </div>
+        </div>
+
+        <h3>Paso a paso técnico y Documentación Gráfica</h3>
+        <div class="concept-box">
+            <ol>
+                <li><strong>Inscripción de equipo:</strong> Inscriba a su pareja en el Google Sheets en uno de los temas disponibles (¡sin repetir!).
+                    <div class="screenshot-box">
+                        [PEGUE AQUÍ EL PANTALLAZO DE SU INSCRIPCIÓN]
+                        <span class="legend">Leyenda: Figura 3. Verificación de inscripción exitosa en la hoja de cálculo del curso.</span>
+                    </div>
+                </li>
+                <li><strong>Acceso a WOS vía institucional:</strong> Ingrese al portal de la biblioteca UIS (<a href="https://tangara.uis.edu.co/biblioteca/" target="_blank">Enlace tangara.uis.edu.co</a>). Busque la sección de "Bases de Datos", seleccione "Web of Science" e inicie sesión con su usuario y contraseña institucional para activar el proxy.
+                    <div class="screenshot-box">
+                        [PEGUE AQUÍ EL PANTALLAZO DEL ACCESO A WOS]
+                        <span class="legend">Leyenda: Figura 4. Plataforma Web of Science validada a través del acceso institucional de la UIS.</span>
+                    </div>
+                </li>
+                <li><strong>Ecuación de búsqueda avanzada:</strong> Construya una ecuación en WOS usando etiquetas de campo (ej. TS=) y operadores booleanos. Exporte los resultados relevantes seleccionándolos, haciendo clic en "Exportar" y eligiendo el formato <code>.bib</code> o <code>.ris</code>.</li>
+                <li><strong>Importación a Mendeley:</strong> Abra Mendeley Reference Manager. Arrastre el archivo exportado o use la opción "Add new" > "Import library". Inscríbase en el grupo de Mendeley del curso y adjunte manualmente los PDFs de los artículos descargados.
+                    <div class="screenshot-box">
+                        [PEGUE AQUÍ EL PANTALLAZO DE SU BIBLIOTECA]
+                        <span class="legend">Leyenda: Figura 5. Biblioteca personal en Mendeley mostrando los artículos importados, los metadatos y los archivos PDF vinculados.</span>
+                    </div>
+                </li>
+                <li><strong>Citación en MS Word:</strong> Abra su documento base en MS Word. Vaya a la pestaña "Referencias" y haga clic en "Mendeley Cite". Inicie sesión, seleccione los artículos de su tema y haga clic en "Insert Citation". Asegúrese de ajustar el estilo a "Science" o "APA" en "Citation Settings".
+                    <div class="screenshot-box">
+                        [PEGUE AQUÍ EL PANTALLAZO DE CITACIÓN]
+                        <span class="legend">Leyenda: Figura 6. Demostración de citación automática en el texto y generación de bibliografía en MS Word usando Mendeley Cite.</span>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="content-section" style="border-top: 4px solid #c0392b; background-color: #fdfefe;">
+        <h2 class="section-title">Instrucciones para la Entrega de Tareas (Entregable)</h2>
+        
+        <div class="concept-box" style="background-color: #fff; border: 1px solid #ddd; border-left: 5px solid #e67e22;">
+            <h3 style="color: #d35400; margin-top: 0;"> Requisitos del Entregable</h3>
+            <ul style="font-size: 0.95em; line-height: 1.6;">
+                <li><strong>Modalidad:</strong> Parejas de laboratorio asignadas por tema en Google Sheets.</li>
+                <li><strong>Documento Base:</strong> Redactado en MS Word para evidenciar el uso del gestor de citas y las capturas de pantalla integradas.</li>
+                <li><strong>Envío:</strong> Exportar el documento final a formato <strong>PDF</strong> y cargarlo en Moodle antes de la fecha límite.</li>
+            </ul>
+        </div>
+
+        <div class="analysis-box">
+            <span class="analysis-header">SECCIÓN A: ENTRENAMIENTO EN OPERADORES Y WOS</span>
+            <p><strong>P1.</strong> Escriba la ruta completa de acceso a WOS desde el portal UIS y describa cómo cambiar el idioma del portal.</p>
+            <p><strong>P2.</strong> ¿Cómo buscaría las palabras <em>tropical, tropics, tropic</em> en una sola expresión usando el operador <code>*</code>?</p>
+            <p><strong>P3.</strong> Redacte la expresión exacta para buscar títulos que contengan <em>tropical, tropics, tropic</em> a un máximo de 6 palabras de distancia de <em>andean, andes</em> (Uso de operador <code>NEAR/6</code>).</p>
+            <p><strong>P4.</strong> Formule la búsqueda para artículos de la revista <em>Journal of Experimental Biology</em> con <em>frog</em> y <em>thermal</em> en el título, excluyendo la palabra <em>tolerance</em> (Uso de operador <code>NOT</code>).</p>
+        </div>
+
+        <div class="analysis-box">
+            <span class="analysis-header">SECCIÓN B: ESTRATEGIA DE BÚSQUEDA DEL PROYECTO SEMESTRAL</span>
+            <p><strong>P5. Declaración de Inscripción:</strong> Indique explícitamente el <strong>Tema</strong> y <strong>Capítulo</strong> en el que se inscribieron exitosamente a través del Google Sheets.</p>
+            <p><strong>P6. Análisis Terminológico:</strong> Presente una tabla con las palabras clave en inglés relacionadas con su tema, sus sinónimos y la <em>justificación biológica</em> de por qué esas palabras delimitan correctamente su investigación específica.</p>
+            <p><strong>P7. Ecuación Avanzada:</strong> Escriba la línea final de código de búsqueda avanzada en WOS (diseñada para encontrar los artículos de su proyecto semestral) conteniendo al menos 3 operadores booleanos y 3 etiquetas de campo.</p>
+        </div>
+
+        <div class="analysis-box">
+            <span class="analysis-header">SECCIÓN C: GESTIÓN DE REFERENCIAS Y CITACIÓN EN WORD</span>
+            <p><strong>P8. Evidencia Mendeley:</strong> Adjunte una captura de pantalla clara de su biblioteca en Mendeley con los artículos de su tema importados, los PDFs vinculados y su suscripción al grupo del curso.</p>
+            <p><strong>P9. Citación Numérica:</strong> Explique cómo se cambia el estilo de citación en el plug-in. Inserte un párrafo de prueba citando 4 trabajos juntos utilizando el formato numérico de la revista <em>Science</em> (ej. 1-4]).</p>
+            <p><strong>P10. Citación de Autor y Año:</strong> Re-inserte el mismo bloque de 4 citas pero utilizando el formato <em>Harvard</em> (o APA) y explique cómo difiere la estructura de la cita en el texto y en la bibliografía final al usar el formato de (Autor, Año).</p>
+        </div>
+
+        <div class="analysis-box">
+            <span class="analysis-header">SECCIÓN D: ANÁLISIS CRÍTICO DE HERRAMIENTAS E INTELIGENCIA ARTIFICIAL</span>
+            <p><strong>P11. Comparativa de Plataformas:</strong> Si su proyecto requiriera estudiar el metabolismo de un pez abisal, ¿por qué utilizar únicamente Google Scholar resulta insuficiente metodológicamente en comparación con una búsqueda sistemática en WOS o PubMed?</p>
+            <p><strong>P12. Sesgos y Alucinaciones:</strong> Utilice un modelo de IA generativo de propósito general (ej. ChatGPT, Claude) y pídale que le genere 3 referencias bibliográficas (estilo APA) sobre la fisiología de su tema asignado. Luego, busque el DOI y el título de cada referencia en WOS o CrossRef. Reporte si las citas existen realmente o si sufrieron alucinación. Finalmente, discuta brevemente: Si hubiera usado una IA académica como Consensus, ¿se solucionaría completamente el sesgo editorial de omitir literatura regional de revistas que no están indexadas allí?</p>
+        </div>
+
+        <h3 style="margin-top: 40px;">Rúbrica de Evaluación (Guía 1)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 20%;">Criterio</th>
+                    <th style="width: 26%;">Excelente (4.0 - 5.0)</th>
+                    <th style="width: 26%;">Bueno (3.0 - 3.9)</th>
+                    <th style="width: 26%;">Deficiente (&lt; 3.0)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Búsqueda y Sintaxis WOS (25%)</strong></td>
+                    <td>Declara su tema inscrito formalmente. Responde con precisión los ejercicios booleanos y construye una ecuación avanzada compleja, demostrando la aplicación directa a su proyecto de clase.</td>
+                    <td>Responde los ejercicios pero la ecuación de su tema es básica, no usa etiquetas de campo o la búsqueda no refleja el tema inscrito.</td>
+                    <td>No comprende el uso de operadores booleanos ni etiquetas de campo en WOS. No declara tema.</td>
+                </tr>
+                <tr>
+                    <td><strong>Gestión Bibliográfica (25%)</strong></td>
+                    <td>Muestra evidencia completa de Mendeley (PDFs, grupo) y domina la citación automática en Word, diferenciando perfectamente los estilos Science y Harvard/APA.</td>
+                    <td>Crea la biblioteca pero no incluye PDFs, o comete errores al diferenciar o cambiar los estilos de cita numéricos vs. autor-año en Word.</td>
+                    <td>No presenta evidencia de Mendeley o realiza las citas de forma manual sin usar el gestor bibliográfico.</td>
+                </tr>
+                <tr>
+                    <td><strong>Análisis Comparativo de Herramientas (25%)</strong></td>
+                    <td>Justifica con rigor biológico la elección de palabras clave y analiza con claridad las diferencias estructurales entre plataformas de bases de datos.</td>
+                    <td>Justifica palabras clave pero el análisis comparativo entre bases de datos es superficial o vago.</td>
+                    <td>No justifica sus palabras clave ni comprende las diferencias entre bases de datos.</td>
+                </tr>
+                <tr>
+                    <td><strong>Conciencia Ética y Verificación de IA (25%)</strong></td>
+                    <td>Demuestra capacidad crítica ejecutando la prueba de alucinación de IA, verificando DOIs reales y sustenta reflexivamente la necesidad de mitigar los sesgos algorítmicos y editoriales (HITL).</td>
+                    <td>Realiza el ejercicio de IA pero no verifica minuciosamente los DOIs o su análisis del sesgo y el fenómeno de alucinación es confuso.</td>
+                    <td>Omite la sección de análisis crítico de IA o acepta referencias generadas como válidas sin cuestionar los sesgos algorítmicos.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="biblio-section">
+        <h3 style="color: #2c3e50; border-bottom: 2px solid #bdc3c7; padding-bottom: 5px; margin-top: 0;">Referencias Bibliográficas</h3>
+        
+        <div class="bib-item">
+            Alkaissi, H., & McFarlane, S. I. (2023). Artificial hallucinations in ChatGPT: implications in scientific writing. <em>Cureus</em>, 15(2), e35179. https://doi.org/10.7759/cureus.35179
+        </div>
+        <div class="bib-item">
+            Kasneci, E., Sessler, K., Küchemann, S., Bannert, M., Dementieva, D., Fischer, F., ... & Kasneci, G. (2023). ChatGPT for good? On the advantages and limitations of large language models for education. <em>Learning and Individual Differences</em>, 103, 102274. https://doi.org/10.1016/j.lindif.2023.102274
+        </div>
+        <div class="bib-item">
+            Lorenzetti, D.L., Ghali, W.A. Reference management software for systematic reviews and meta-analyses: an exploration of usage and usability. <em>BMC Med Res Methodol</em> 13, 141 (2013). https://doi.org/10.1186/1471-2288-13-141. 
+        </div>
+        <div class="bib-item">
+            Martín-Martín, A., Orduna-Malea, E., Thelwall, M., & Delgado López-Cózar, E. (2018). Google Scholar, Web of Science, and Scopus: A systematic comparison of citations in 252 subject categories. <em>Journal of Informetrics</em>, 12(4), 1160-1177. https://doi.org/10.1016/j.joi.2018.09.002
+        </div>
+        <div class="bib-item">
+            Mongeon, P., & Paul-Hus, A. (2016). The journal coverage of Web of Science and Scopus: a comparative analysis. <em>Scientometrics</em>, 106(1), 213-228. https://doi.org/10.1007/s11192-015-1765-5
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
