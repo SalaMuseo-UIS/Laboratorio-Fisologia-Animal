@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laboratorio de Fisiología Animal - UIS</title>
+
+<style>
+    /* ESTILO ACADÉMICO UIS */
+    body {
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f0f2f5;
+        margin: 0;
+        padding: 40px 20px;
+    }
+    .main-container {
+        max-width: 900px;
+        margin: auto;
+        background-color: #ffffff;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    /* ENCABEZADO PROFESIONAL */
+    .header-banner {
+        background-color: #2c3e50;
+        color: white;
+        padding: 40px 30px;
+        text-align: center;
+        border-bottom: 5px solid #27ae60;
+    }
+    .header-banner h1 { margin: 0; font-size: 2.2em; text-transform: uppercase; letter-spacing: 1px; }
+    .header-banner h2 { font-size: 1.2em; font-weight: 300; margin-top: 10px; color: #bdc3c7; }
+    
+    /* CONTENIDO */
+    .content-section { padding: 40px 50px; }
+    .intro-text {
+        text-align: center;
+        font-size: 1.1em;
+        margin-bottom: 40px;
+        color: #555;
+    }
+
+    /* TARJETAS DE LABORATORIOS */
+    .lab-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .lab-card {
+        background-color: #fdfefe;
+        border: 1px solid #e0e0e0;
+        border-left: 6px solid #2980b9;
+        border-radius: 6px;
+        padding: 25px;
+        transition: transform 0.2s, box-shadow 0.2s;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .lab-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 15px rgba(0,0,0,0.05);
+        border-left-color: #27ae60;
+    }
+
+    .lab-title {
+        font-size: 1.4em;
+        font-weight: 700;
+        color: #2c3e50;
+        margin: 0 0 10px 0;
+    }
+
+    .lab-desc {
+        color: #666;
+        margin-bottom: 20px;
+        font-size: 0.95em;
+    }
+
+    .lab-link {
+        display: inline-block;
+        background-color: #2980b9;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        font-weight: bold;
+        text-align: center;
+        align-self: flex-start;
+        transition: background-color 0.3s;
+    }
+
+    .lab-link:hover {
+        background-color: #27ae60;
+    }
+
+    /* ESTILO PARA LABS FUTUROS (INACTIVOS) */
+    .lab-card.inactive {
+        border-left: 6px solid #bdc3c7;
+        background-color: #f9f9f9;
+    }
+    .lab-card.inactive .lab-title { color: #7f8c8d; }
+    .lab-card.inactive .lab-link {
+        background-color: #bdc3c7;
+        cursor: not-allowed;
+    }
+
+    /* PIE DE PÁGINA */
+    .footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #ecf0f1;
+        color: #7f8c8d;
+        font-size: 0.85em;
+        border-top: 1px solid #ddd;
+    }
+</style>
+</head>
+<body>
+
+<div class="main-container">
+    <div class="header-banner">
+        <h1>UNIVERSIDAD INDUSTRIAL DE SANTANDER</h1>
+        <h2>Escuela de Biología | Fisiología Animal (20073) | Semestre 2026-2</h2>
+    </div>
+    
+    <div class="content-section">
+        <p class="intro-text">
+            Bienvenido al repositorio de guías de laboratorio. Seleccione la práctica correspondiente para acceder al material, instrucciones y entregables de la sesión.
+        </p>
+
+        <div class="lab-grid">
+            
+            <!-- LABORATORIO 1 (ACTIVO) -->
+            <div class="lab-card">
+                <h3 class="lab-title">Laboratorio 1: TIC y Búsqueda Bibliográfica</h3>
+                <p class="lab-desc">Uso de Web of Science, gestores de referencia (Mendeley), estructuración de ecuaciones booleanas y análisis crítico de Inteligencia Artificial (Alucinaciones y Sesgos).</p>
+                <a href="lab1.html" class="lab-link">Ir a la Guía del Laboratorio 1</a>
+            </div>
+
+            <!-- LABORATORIO 2 (PRÓXIMAMENTE) -->
+            <div class="lab-card inactive">
+                <h3 class="lab-title">Laboratorio 2: Disección Crítica de Literatura</h3>
+                <p class="lab-desc">Análisis crítico metodológico de estudios experimentales primarios en fisiología animal. Material en desarrollo.</p>
+                <a href="#" class="lab-link" onclick="event.preventDefault();">Próximamente</a>
+            </div>
+
+            <!-- LABORATORIO 3 (PRÓXIMAMENTE) -->
+            <div class="lab-card inactive">
+                <h3 class="lab-title">Laboratorio 3: Escritura de Minireview</h3>
+                <p class="lab-desc">Estructuración y escritura de un artículo de revisión científica siguiendo el formato de la revista PLOS ONE. Material en desarrollo.</p>
+                <a href="#" class="lab-link" onclick="event.preventDefault();">Próximamente</a>
+            </div>
+
+            <!-- LABORATORIO 4 (PRÓXIMAMENTE) -->
+            <div class="lab-card inactive">
+                <h3 class="lab-title">Laboratorio 4: Proyecto de Divulgación</h3>
+                <p class="lab-desc">Creación de material para la exhibición del Museo de Historia Natural de la UIS. Material en desarrollo.</p>
+                <a href="#" class="lab-link" onclick="event.preventDefault();">Próximamente</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2026 Prof. Sergio Marchant, Ph.D. - Todos los derechos reservados.
+    </div>
+</div>
+
+</body>
+</html>
