@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fisiología Animal 20073 - Lab 2 - Disección Científica y Ética Animal (2026-2)</title>
+
+<style>
+    /* ESTILO ACADÉMICO UIS */
+    body {
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.8;
+        color: #333;
+        background-color: #f0f2f5;
+        margin: 0;
+        padding: 40px;
+    }
+    .main-container {
+        max-width: 1100px;
+        margin: auto;
+        background-color: #ffffff;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    /* ENCABEZADO PROFESIONAL */
+    .header-banner {
+        background-color: #2c3e50;
+        color: white;
+        padding: 50px;
+        text-align: center;
+        border-bottom: 5px solid #27ae60;
+    }
+    .header-banner h1 { margin: 0; font-size: 2.3em; text-transform: uppercase; letter-spacing: 1px; }
+    .header-banner h2 { font-size: 1.2em; font-weight: 300; margin-top: 10px; color: #bdc3c7; }
+    
+    /* CONTENIDO */
+    .content-section { padding: 40px 60px; border-bottom: 1px solid #f0f0f0; }
+    .section-title {
+        color: #2c3e50;
+        border-left: 6px solid #27ae60;
+        padding-left: 15px;
+        margin-bottom: 25px;
+        font-size: 1.6em;
+        font-weight: 700;
+    }
+    h3 { color: #34495e; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-top: 35px; }
+    p { margin-bottom: 1.5em; text-align: justify; }
+    a { color: #2980b9; text-decoration: none; font-weight: bold; }
+    a:hover { text-decoration: underline; color: #1abc9c; }
+
+    /* BLOQUES DE CONCEPTOS, EJEMPLOS Y ADVERTENCIAS */
+    .concept-box {
+        background-color: #f8f9fa;
+        border-left: 5px solid #3498db;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 4px;
+    }
+    .project-box {
+        background-color: #f4f6f7;
+        border: 2px solid #2980b9;
+        padding: 25px;
+        margin: 20px 0;
+        border-radius: 8px;
+    }
+    .example-box {
+        background-color: #e8f8f5;
+        border-left: 5px solid #1abc9c;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 4px;
+        font-size: 0.95em;
+    }
+    .example-header {
+        font-weight: 700;
+        color: #16a085;
+        text-transform: uppercase;
+        font-size: 0.9em;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .warning-box {
+        background-color: #fdf2e9;
+        border: 1px solid #e67e22;
+        border-left: 6px solid #e67e22;
+        padding: 20px;
+        margin: 25px 0;
+        border-radius: 4px;
+    }
+    .warning-header {
+        font-weight: 700;
+        color: #d35400;
+        text-transform: uppercase;
+        font-size: 0.9em;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    /* ESPACIOS PARA PANTALLAZOS */
+    .screenshot-box {
+        border: 2px dashed #95a5a6;
+        background-color: #eaeded;
+        padding: 35px 20px;
+        text-align: center;
+        margin: 20px 0;
+        border-radius: 6px;
+        color: #7f8c8d;
+    }
+    .screenshot-box .legend {
+        display: block;
+        margin-top: 15px;
+        font-size: 0.9em;
+        font-weight: 600;
+        color: #2c3e50;
+    }
+
+    /* BLOQUES DE ENTREGABLE */
+    .analysis-box {
+        background-color: #fffdf0;
+        border: 1px solid #f1c40f;
+        border-left: 6px solid #f1c40f;
+        padding: 25px;
+        margin: 30px 0;
+        border-radius: 4px;
+    }
+    .analysis-header {
+        font-weight: 700;
+        color: #9a7d0a;
+        text-transform: uppercase;
+        font-size: 0.85em;
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    /* TABLAS Y BIBLIOGRAFÍA */
+    table { width: 100%; border-collapse: collapse; margin: 25px 0; font-size: 0.92em; }
+    th { background-color: #2c3e50; color: white; padding: 12px; text-align: left; border-bottom: 2px solid #ddd; }
+    td { padding: 12px; border-bottom: 1px solid #eee; vertical-align: top; }
+    .table-striped tbody tr:nth-child(odd) { background-color: #f9f9f9; }
+    
+    .biblio-section { background-color: #f9f9f9; padding: 30px 40px; font-size: 0.9em; border-top: 1px solid #e0e0e0; }
+    .bib-item { margin-bottom: 12px; padding-left: 25px; text-indent: -25px; }
+
+</style>
+</head>
+<body>
+
+<div class="main-container">
+    <div class="header-banner">
+        <h1>UNIVERSIDAD INDUSTRIAL DE SANTANDER</h1>
+        <h2>Escuela de Biología | Asignatura: Fisiología Animal (20073) | Semestre 2026-2</h2>
+        <p>Docente: Prof. Sergio Andrés Marchant, Ph.D.</p>
+    </div>
+    
+    <div class="content-section">
+        <h2 class="section-title">Práctico 2: Disección Crítica de Artículos, Ética Animal y Viabilidad Experimental</h2>
+        
+        <p>
+            Casi todos piensan que los biólogos y científicos trabajan exclusivamente en un laboratorio o en campo, haciendo mezclas de soluciones químicas, midiendo parámetros o recolectando datos fisiológicos utilizando animales vivos. Sin embargo, la mayor parte del tiempo de un científico no se destina al trabajo operativo, sino al <strong>análisis y comunicación de esos datos</strong>. Como argumenta Schimel (2012), el trabajo científico no culmina cuando se obtiene el último dato en el laboratorio, sino cuando ese dato es estructurado, interpretado y transformado en una narrativa comprensible para la comunidad global.
+        </p>
+        <p>
+            En el laboratorio anterior (Práctico 1), ustedes construyeron una sólida base de datos bibliográfica utilizando Web of Science y Mendeley. Hoy, daremos el siguiente paso: la <strong>Etapa 2 de su Proyecto Semestral</strong>. Esta actividad busca que aprendan a realizar una disección profunda de la literatura primaria, evaluando no solo cómo se escribe la ciencia, sino con qué herramientas, presupuesto y bajo qué estrictos parámetros éticos se ejecuta.
+        </p>
+
+        <h3>OBJETIVOS DE APRENDIZAJE</h3>
+        <ul>
+            <li><strong>Identificar y analizar</strong> la estructura interna (formato y estilo) de la literatura primaria en Fisiología Animal.</li>
+            <li><strong>Evaluar críticamente</strong> los protocolos, la presentación de resultados crudos vs. procesados y el significado biológico frente al estadístico.</li>
+            <li><strong>Reconocer y valorar</strong> las declaraciones de ética y bienestar animal en la literatura reciente, comprendiendo la responsabilidad ineludible del investigador.</li>
+            <li><strong>Identificar y evaluar</strong> el equipamiento y software especializado necesario para la experimentación, investigando sus costos para dimensionar la complejidad y viabilidad logística de la investigación de alto impacto.</li>
+            <li><strong>Promover</strong> un estilo de escritura conciso y estructurado como preparación para la redacción de su Minireview (Etapa 3).</li>
+        </ul>
+    </div>
+
+    <div class="content-section">
+        <h2 class="section-title">1. Selección de Artículos, Equipamiento y Ética</h2>
+        
+        <p>
+            Para avanzar en el límite del conocimiento se requiere del trabajo de muchos científicos que comparten sus descubrimientos. Escribir en el formato correcto no garantiza que un artículo sea publicado, pero <em>no</em> seguir un formato estructurado garantiza un rechazo automático. El avance en fisiología depende fuertemente de que las metodologías publicadas sean transparentes y replicables (Munafò et al., 2017).
+        </p>
+
+        <div class="project-box">
+            <h3 style="margin-top: 0; color: #2980b9;">📥 Instrucciones de Selección Bibliográfica</h3>
+            <p>
+                Abran su biblioteca de <strong>Mendeley</strong> conformada en el Laboratorio 1. Deberán seleccionar cuidadosamente <strong>tres (3) artículos científicos</strong> de su tema de proyecto semestral, bajo las siguientes reglas estrictas:
+            </p>
+            <ul style="font-weight: bold; color: #2c3e50;">
+                <li>Deben ser artículos experimentales primarios (con Introducción, Métodos, Resultados y Discusión claros). <em>No se aceptan artículos de revisión (Reviews).</em></li>
+                <li>Deben involucrar experimentación directa con animales vivos (fisiología, ecofisiología, metabolismo, comportamiento medible, etc.).</li>
+                <li><span style="color: #c0392b;">Regla de Ética:</span> Al menos uno de los tres artículos seleccionados debe ser de publicación reciente (últimos 5-7 años) y contener una <strong>Declaración Ética explícita sobre el uso de animales</strong> (Institucional Animal Care and Use Committee - IACUC, aval de comité de bioética, etc.).</li>
+            </ul>
+        </div>
+
+        <div class="warning-box">
+            <span class="warning-header"> EL TRABAJO ÉTICO EN FISIOLOGÍA ANIMAL</span>
+            <p>
+                La Fisiología Animal ha dependido históricamente del uso de modelos animales para comprender los mecanismos de la vida. Hoy en día, la publicación en revistas científicas de corriente principal exige el cumplimiento estricto del principio de las <strong>3Rs (Reemplazo, Reducción y Refinamiento)</strong>, formulado originalmente por Russell y Burch (1959) y ratificado internacionalmente (National Research Council, 2011).
+            </p>
+            <p style="margin-bottom: 15px;">
+                Más allá de la obligación legal y moral, existe una razón puramente fisiológica para velar por el bienestar animal: <strong>el estrés arruina los datos</strong>. Romero (2004) demostró ampliamente cómo la secreción de glucocorticoides generada por un manejo inadecuado altera radicalmente variables metabólicas basales, perfiles inmunológicos y respuestas cardiovasculares. Un animal estresado no representa la fisiología natural de su especie.
+            </p>
+            <p style="margin-bottom: 0;">
+                Por ello, sin una aprobación de un comité de bioética institucional (que garantice el refinamiento experimental), los datos —por más espectaculares que sean— <strong>no son publicables y constituyen una falta grave a la integridad científica</strong>. Generalmente, esta declaración se ubica al final de la Introducción, al inicio de los Materiales y Métodos, o en una sección dedicada a "Ethics Statement".
+            </p>
+        </div>
+        
+        <div class="concept-box">
+            <h3 style="color: #2980b9; margin-top: 0;">Tecnología y Costos en la Fisiología Moderna</h3>
+            <p style="margin-bottom: 0;">
+                Hacer buena ciencia requiere buenas ideas, pero ejecutarla muchas veces depende del acceso a tecnología especializada. La fisiología animal ha transitado de mediciones rudimentarias de laboratorio a evaluaciones precisas en ecosistemas naturales. Esto ha sido posible gracias a avances metodológicos como la respirometría de flujo abierto de precisión (Lighton, 2008) o el <em>biologging</em> y la telemetría, que permiten medir la frecuencia cardíaca, aceleración o temperatura de un animal en estado silvestre (Cooke et al., 2004). Dimensionar el costo de estos equipos y del software de análisis es vital para entender las brechas logísticas y las facilidades experimentales necesarias para publicar en revistas de alto impacto.
+            </p>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <h2 class="section-title">2. Estructura y Estilo Científico (Guía de Análisis)</h2>
+        <p>
+            A continuación, exploraremos las características de los trabajos de investigación. Deberá leer los documentos en el mismo orden en que generalmente se escriben las publicaciones: <strong>Materiales y Métodos ➔ Resultados (Figuras/Tablas) ➔ Discusión ➔ Introducción ➔ Resumen y Título.</strong>
+        </p>
+
+        <h3>A. Materiales y Métodos</h3>
+        <p>
+            La comunidad científica actual enfrenta lo que se ha denominado una "crisis de reproducibilidad" (Munafò et al., 2017). Para combatirla, esta sección debe permitir que cualquier otro científico replique el estudio con exactitud. Por regla general, los autores utilizan "sub-secciones guía" (subtítulos) para organizar la información (ej. <em>Captura animal, Protocolos de respirometría, Análisis estadístico</em>).
+        </p>
+        <div class="concept-box">
+            <strong>Frases Explicativas vs. Pasos:</strong> Además de la metodología pura (ej. "los animales se mantuvieron a 25°C"), los buenos autores incluyen breves explicaciones del <em>por qué</em> se tomó un paso en particular. (Ej: "Los animales fueron aclimatados a 25°C durante 15 días <em>para asegurar la estabilización de su tasa metabólica basal antes del ensayo térmico</em>"). Sin estas justificaciones ecológicas o biológicas, el lector podría cuestionar el razonamiento del método o descartarlo como una decisión arbitraria.
+        </div>
+
+        <h3>B. Resultados: Figuras, Tablas y Texto</h3>
+        <p>
+            Es común que los estudiantes piensen que solo los números son "datos". Sin embargo, los <strong>datos de comportamiento</strong> o del estado fisiológico general durante el experimento (ej. "el animal permaneció en reposo y con los ojos cerrados", "se observó jadeo activo") son vitales para interpretar la validación del protocolo, ya que la fisiología está inherentemente ligada a la respuesta conductual.
+        </p>
+        
+        <div class="example-box">
+            <span class="example-header"> ANATOMÍA DE UNA LEYENDA Y REPRESENTACIÓN VISUAL</span>
+            <p>En un artículo científico moderno, la unidad [Leyenda + Figura] debe sostenerse por sí sola. Las leyendas siempre deben incluir:</p>
+            <ul style="margin-top: 5px; margin-bottom: 15px;">
+                <li>Un <strong>título</strong> (frase que describe precisamente lo que se muestra).</li>
+                <li>Un <strong>resumen de los resultados</strong> visibles en el gráfico.</li>
+                <li>Una <strong>descripción de los símbolos</strong> y medidas de dispersión utilizadas.</li>
+            </ul>
+            <p style="margin-bottom: 0;">
+                Además, la calidad de la ciencia depende de cómo se visualiza. Weissgerber et al. (2015) demostraron que el uso excesivo de gráficos de barras para datos continuos oculta la verdadera distribución de los resultados, recomendando encarecidamente el uso de diagramas de caja (boxplots), gráficos de violín o dispersión (scatter plots) para representar datos crudos de variabilidad biológica.
+            </p>
+        </div>
+        
+        <p>
+            <strong>Resultados Biológicos vs. Estadísticos:</strong> Los autores casi nunca usan una frase completa de texto principal para entregar resultados puramente estadísticos. En su lugar, enfatizan el <em>resultado biológico</em> en el texto y relegan la estadística a un paréntesis. Ej: "La tasa cardiaca de los lagartos aumentó significativamente con la temperatura (ANOVA, p < 0.05)". El protagonista de la ciencia biológica es el fenómeno biológico, no el test de hipótesis.
+        </p>
+
+        <h3>C. Discusión e Introducción</h3>
+        <p>
+            La narrativa de un artículo científico obedece a una estructura retórica muy precisa. Swales (1990) introdujo el concepto del "embudo" para la <strong>Introducción</strong>: se comienza estableciendo un territorio general (el gran problema ecofisiológico), se identifica un vacío en la literatura (el "nicho"), y finalmente, en el último párrafo, se ocupa ese nicho estableciendo los objetivos y la hipótesis del estudio.
+        </p>
+        <p>
+            La <strong>Discusión</strong> hace exactamente lo opuesto ("embudo invertido"). En su primer párrafo, el autor generalmente re-plantea su hipótesis y responde directamente a la pregunta central de estudio, indicando si los resultados estuvieron de acuerdo con sus predicciones. Luego, expande la discusión comparando sus hallazgos con la literatura hasta llegar a conclusiones universales sobre el modelo de estudio.
+        </p>
+
+        <h3>D. Voz Activa frente a Pasiva</h3>
+        <p>
+            Aunque históricamente se exigía 100% de voz pasiva ("Se midió la temperatura...", "Fueron analizadas las muestras..."), la escritura moderna en Fisiología prefiere una mezcla, con un fuerte sesgo hacia la voz activa en ciertas revistas. El uso de la voz activa ("Medimos la temperatura...", "Nosotros analizamos...") permite al autor tomar crédito directo por sus acciones experimentales, define responsabilidades claras (Schimel, 2012) y hace la lectura mucho más dinámica.
+        </p>
+    </div>
+
+    <div class="content-section" style="border-top: 4px solid #c0392b; background-color: #fdfefe;">
+        <h2 class="section-title">Instrucciones para el Entregable (Cuestionario)</h2>
+        
+        <div class="concept-box" style="background-color: #fff; border: 1px solid #ddd; border-left: 5px solid #e67e22;">
+            <h3 style="color: #d35400; margin-top: 0;"> Requisitos de Entrega (Obligatorio)</h3>
+            <ul style="font-size: 0.95em; line-height: 1.6;">
+                <li><strong>Cobertura Total:</strong> Para que este trabajo sea contundente, <strong>TODAS las preguntas deben ser respondidas para los TRES (3) artículos seleccionados</strong> (a menos que la pregunta indique lo contrario). No basta con elegir uno solo. Haga el análisis comparativo para los tres.</li>
+                <li><strong>Citas en Word:</strong> Utilice el plugin de Mendeley Cite para insertar la referencia de los 3 artículos al inicio de su documento.</li>
+                <li><strong>Empaquetado y Envío:</strong> Deberán crear una carpeta y comprimirla en formato <strong>.ZIP</strong>. Esta carpeta debe contener obligatoriamente: 
+                    <ol>
+                        <li>El documento PDF con el desarrollo de este cuestionario.</li>
+                        <li>Los tres (3) archivos PDF originales de los artículos científicos evaluados.</li>
+                    </ol>
+                Suba el archivo .ZIP a Moodle antes de la fecha límite.
+                </li>
+            </ul>
+        </div>
+
+        <div class="analysis-box">
+            <span class="analysis-header">SECCIÓN 1: ÉTICA Y BIENESTAR ANIMAL EN FISIOLOGÍA</span>
+            <p><strong>P1.</strong> Para <strong>cada uno de los 3 artículos</strong>, busque e identifique la declaración ética. Transcriba textualmente el párrafo o fragmento donde se declara la aprobación ética (puede ser en el idioma original). Si alguno de sus artículos (especialmente los más antiguos) carece de esta declaración, indique explícitamente "No contiene declaración ética".</p>
+            <p><strong>P2.</strong> Analice las declaraciones encontradas: ¿Qué comités o instituciones avalaron los estudios? ¿Se menciona explícitamente alguna ley nacional o internacional de bienestar animal basada en los principios de las 3Rs?</p>
+            <p><strong>P3.</strong> Revise la metodología de los 3 artículos. Describa brevemente qué medidas de "Refinamiento" o mitigación de estrés (según Romero, 2004) tomaron los autores durante el manejo, experimentación o sacrificio de los animales (ej. tipos de anestesia, minimización del tiempo de manipulación, alojamiento enriquecido).</p>
+        </div>
+
+        <div class="analysis-box">
+            <span class="analysis-header">SECCIÓN 2: MATERIALES, MÉTODOS Y EQUIPAMIENTO</span>
+            <p><strong>P4. Sub-secciones:</strong> Para los 3 artículos, escriba una lista de los subtítulos (sub-secciones guía) utilizados en Materiales y Métodos. Si alguno no usó subtítulos, proponga 3 que organizarían mejor la lectura y fomentarían la reproducibilidad de esa sección.</p>
+            <p><strong>P5. Frases Explicativas:</strong> Busque al menos una "frase explicativa" dentro de los métodos de <strong>cada artículo</strong> (una frase que explique el <em>por qué</em> biológico o ecológico se hizo un paso de cierta manera). Transcríbalas e indique para cada caso: como lector, ¿cuestionaría la validez del método si esa frase no estuviera allí?</p>
+            <p><strong>P6. Equipamiento y Costos:</strong> Para <strong>cada artículo</strong>, extraiga los equipos principales (ej. sistemas de respirometría, <em>biologgers</em>, sondas) o software especializado utilizados para la toma o análisis de datos experimentales. Elabore una tabla conjunta que contenga las siguientes columnas: <em>Artículo, Equipo/Software, Función biológica/técnica, y Costo estimado online (en USD o COP)</em>. <br> <em>Discusión:</em> Basado en su investigación de precios, escriba un párrafo analizando cómo el costo y la sofisticación de estos equipos definen la simplicidad o dificultad de realizar investigación de alto impacto en fisiología animal en nuestra región.</p>
+        </div>
+
+        <div class="analysis-box">
+            <span class="analysis-header">SECCIÓN 3: RESULTADOS (Texto y Figuras)</span>
+            <p><strong>P7.</strong> Para <strong>cada artículo</strong>, elija una figura principal. Desglose su leyenda y escriba cuál es: a) El título de la figura, b) El resumen biológico de los resultados, c) La descripción de los símbolos, ejes o tratamientos mostrados.</p>
+            <p><strong>P8.</strong> Analizando esas mismas tres figuras bajo la premisa de Weissgerber et al. (2015), indique cuáles muestran datos crudos (ej. dispersión, cajas) y cuáles muestran agrupaciones procesadas (ej. barras con promedios). ¿Por qué cree que los autores tomaron esa decisión de presentación visual en cada caso?</p>
+            <p><strong>P9.</strong> Extraiga una frase de <strong>cada artículo</strong> donde se evidencie la separación entre el <em>resultado biológico</em> en el texto principal y el <em>resultado estadístico</em> relegado al paréntesis. Luego, explique con sus propias palabras qué significa realmente que el autor haya obtenido un "p < 0.05" (o un valor p en particular) en ese contexto específico fisiológico.</p>
+        </div>
+
+        <div class="analysis-box">
+            <span class="analysis-header">SECCIÓN 4: DISCUSIÓN, INTRODUCCIÓN Y ESTILO</span>
+            <p><strong>P10.</strong> Para <strong>los 3 artículos</strong>, lea el primer párrafo de la Discusión y compárelo con el último párrafo de la Introducción (evaluando la estructura de embudo de Swales, 1990). Escriba cuál es la hipótesis central de cada estudio. ¿Hicieron los autores un buen trabajo conectando ambas secciones?</p>
+            <p><strong>P11.</strong> Cuente el número de párrafos de los Resultados vs. la Discusión para <strong>cada artículo</strong>. ¿Qué sección es consistentemente más extensa y por qué cree que es así para debatir modelos ecofisiológicos?</p>
+            <p><strong>P12.</strong> Evalúe los resúmenes (Abstracts) de sus 3 documentos. ¿Cumplen con el formato típico de un solo párrafo? Identifique para cada uno cuántas oraciones están dedicadas exclusivamente a describir la metodología y ejecución.</p>
+            <p><strong>P13.</strong> Lea fragmentos de Resultados de los 3 documentos y clasifique el uso de la voz por parte de los autores (activa vs pasiva). Extraiga un ejemplo de <em>Voz Activa</em> de cualquiera de los artículos y discuta (basado en Schimel, 2012) por qué su uso hace más efectiva y dinámica la asunción de responsabilidades en la escritura de los hallazgos.</p>
+        </div>
+
+        <h3 style="margin-top: 40px;">Rúbrica de Evaluación (Guía 2)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 20%;">Criterio</th>
+                    <th style="width: 26%;">Excelente (4.0 - 5.0)</th>
+                    <th style="width: 26%;">Bueno (3.0 - 3.9)</th>
+                    <th style="width: 26%;">Deficiente (&lt; 3.0)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Análisis Ético e Inclusión (25%)</strong></td>
+                    <td>Entrega el archivo ZIP completo (PDF respuestas + 3 PDFs artículos). Analiza con profundidad el componente ético de los 3 artículos, identificando comités y prácticas de bienestar animal (refinamiento) de forma crítica.</td>
+                    <td>Falta algún archivo PDF en la entrega. El análisis de la declaración ética es superficial o no detalla las prácticas de refinamiento comparadas entre los 3 artículos.</td>
+                    <td>No entrega los PDFs requeridos, no incluye artículos con declaración ética o escoge artículos de revisión (Reviews).</td>
+                </tr>
+                <tr>
+                    <td><strong>Viabilidad Técnica y Equipamiento (25%)</strong></td>
+                    <td>Investiga y tabula rigurosamente los equipos y software de los 3 artículos. La estimación de costos es realista y su análisis sobre la viabilidad de hacer ciencia de alto impacto en la región es profundo y crítico.</td>
+                    <td>Lista los equipos para los artículos, pero la investigación de costos o función es incompleta. El análisis de viabilidad logística es vago o ausente.</td>
+                    <td>Omite la sección de equipamiento o no realiza el esfuerzo de investigar y dimensionar económicamente las herramientas descritas en los métodos.</td>
+                </tr>
+                <tr>
+                    <td><strong>Disección Estructural (Métodos/Resultados) (25%)</strong></td>
+                    <td>Aplica el análisis a los 3 artículos sin excepción. Disecciona perfectamente figuras, leyendas y justifica frases explicativas. Diferencia claramente entre resultados biológicos y estadísticos, explicando el valor-p con precisión.</td>
+                    <td>Comprende la anatomía de las figuras, pero realiza el análisis solo para 1 o 2 artículos. Su explicación de la estadística o de las frases metodológicas es confusa.</td>
+                    <td>No desglosa correctamente las leyendas, no aplica el análisis a los 3 artículos o confunde el significado de los datos crudos vs. procesados.</td>
+                </tr>
+                <tr>
+                    <td><strong>Coherencia y Estilo de Escritura (25%)</strong></td>
+                    <td>Sintetiza las hipótesis centrales comparando Introducción y Discusión de los 3 artículos. Analiza correctamente resúmenes y el uso de la voz. El entregable está impecablemente redactado y citado utilizando Mendeley Cite.</td>
+                    <td>El análisis estilístico es correcto, pero falla al comparar la coherencia interna en los 3 artículos, o el documento presenta fallas menores de citación y uso del gestor.</td>
+                    <td>El análisis de la voz o resúmenes es incorrecto. El documento no incluye las citas bibliográficas generadas por el gestor de Mendeley.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="biblio-section">
+        <h3 style="color: #2c3e50; border-bottom: 2px solid #bdc3c7; padding-bottom: 5px; margin-top: 0;">Referencias Bibliográficas Clave del Laboratorio</h3>
+        
+        <div class="bib-item">
+            Cooke, S. J., Hinch, S. G., Wikelski, M., Andrews, R. D., Kuchel, L. J., Wolcott, T. G., & Butler, P. J. (2004). Biologging and biotelemetry in the wild: tracking and understanding animals in their natural habitats. <em>Trends in Ecology & Evolution</em>, 19(6), 334-343.
+        </div>
+        <div class="bib-item">
+            Lighton, J. R. B. (2008). <em>Measuring metabolic rates: a manual for scientists</em>. Oxford University Press.
+        </div>
+        <div class="bib-item">
+            Munafò, M. R., Nosek, B. A., Bishop, D. V., Button, K. S., Chambers, C. D., Percie du Sert, N., ... & Ioannidis, J. P. (2017). A manifesto for reproducible science. <em>Nature Human Behaviour</em>, 1(1), 0021.
+        </div>
+        <div class="bib-item">
+            National Research Council (US) Committee for the Update of the Guide for the Care and Use of Laboratory Animals. (2011). <em>Guide for the care and use of laboratory animals</em> (8th ed.). National Academies Press (US).
+        </div>
+        <div class="bib-item">
+            Romero, L. M. (2004). Physiological stress in ecology: lessons from biomedical research. <em>Trends in Ecology & Evolution</em>, 19(5), 249-255.
+        </div>
+        <div class="bib-item">
+            Russell, W. M. S., & Burch, R. L. (1959). <em>The Principles of Humane Experimental Technique</em>. Methuen.
+        </div>
+        <div class="bib-item">
+            Schimel, J. (2012). <em>Writing Science: how to write papers that get cited and proposals that get funded</em>. Oxford University Press.
+        </div>
+        <div class="bib-item">
+            Swales, J. M. (1990). <em>Genre analysis: English in academic and research settings</em>. Cambridge University Press.
+        </div>
+        <div class="bib-item">
+            Weissgerber, T. L., Milic, N. M., Winham, S. J., & Garovic, V. D. (2015). Beyond bar and line graphs: time for a new data presentation paradigm. <em>PLoS Biology</em>, 13(4), e1002128.
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
