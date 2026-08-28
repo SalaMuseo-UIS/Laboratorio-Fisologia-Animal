@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fisiología Animal 20073 - Lab 3 - Escritura del Minireview Científico (2026-2)</title>
+
+<style>
+    /* ESTILO ACADÉMICO UIS */
+    body {
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.8;
+        color: #333;
+        background-color: #f0f2f5;
+        margin: 0;
+        padding: 40px;
+    }
+    .main-container {
+        max-width: 1100px;
+        margin: auto;
+        background-color: #ffffff;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    /* ENCABEZADO PROFESIONAL */
+    .header-banner {
+        background-color: #2c3e50;
+        color: white;
+        padding: 50px;
+        text-align: center;
+        border-bottom: 5px solid #27ae60;
+    }
+    .header-banner h1 { margin: 0; font-size: 2.3em; text-transform: uppercase; letter-spacing: 1px; }
+    .header-banner h2 { font-size: 1.2em; font-weight: 300; margin-top: 10px; color: #bdc3c7; }
+    
+    /* CONTENIDO */
+    .content-section { padding: 40px 60px; border-bottom: 1px solid #f0f0f0; }
+    .section-title {
+        color: #2c3e50;
+        border-left: 6px solid #27ae60;
+        padding-left: 15px;
+        margin-bottom: 25px;
+        font-size: 1.6em;
+        font-weight: 700;
+    }
+    h3 { color: #34495e; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-top: 35px; }
+    p { margin-bottom: 1.5em; text-align: justify; }
+    
+    /* BLOQUES DE CONCEPTOS, EJEMPLOS Y ADVERTENCIAS */
+    .concept-box {
+        background-color: #f8f9fa;
+        border-left: 5px solid #3498db;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 4px;
+    }
+    .example-box {
+        background-color: #e8f8f5;
+        border-left: 5px solid #1abc9c;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 4px;
+        font-size: 0.95em;
+    }
+    .example-header {
+        font-weight: 700;
+        color: #16a085;
+        text-transform: uppercase;
+        font-size: 0.9em;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .warning-box {
+        background-color: #fdf2e9;
+        border: 1px solid #e67e22;
+        border-left: 6px solid #e67e22;
+        padding: 20px;
+        margin: 25px 0;
+        border-radius: 4px;
+    }
+    .warning-header {
+        font-weight: 700;
+        color: #d35400;
+        text-transform: uppercase;
+        font-size: 0.9em;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    /* BLOQUES DE ENTREGABLE */
+    .analysis-box {
+        background-color: #fffdf0;
+        border: 1px solid #f1c40f;
+        border-left: 6px solid #f1c40f;
+        padding: 25px;
+        margin: 30px 0;
+        border-radius: 4px;
+    }
+    .analysis-header {
+        font-weight: 700;
+        color: #9a7d0a;
+        text-transform: uppercase;
+        font-size: 0.85em;
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    /* TABLAS Y FIGURAS SIMULADAS */
+    table { width: 100%; border-collapse: collapse; margin: 25px 0; font-size: 0.92em; }
+    th { background-color: #2c3e50; color: white; padding: 12px; text-align: left; border-bottom: 2px solid #ddd; }
+    td { padding: 12px; border-bottom: 1px solid #eee; vertical-align: top; }
+    .table-striped tbody tr:nth-child(odd) { background-color: #f9f9f9; }
+
+    .figure-simulation {
+        border: 2px dashed #bdc3c7;
+        background-color: #ecf0f1;
+        padding: 40px 20px;
+        text-align: center;
+        color: #7f8c8d;
+        margin: 20px 0 10px 0;
+        font-weight: bold;
+    }
+    .caption-below { text-align: justify; font-size: 0.85em; color: #555; margin-bottom: 30px; }
+    .caption-above { text-align: justify; font-size: 0.85em; color: #555; margin-top: 30px; margin-bottom: 5px; }
+
+    .biblio-section { border-top: 1px solid #e0e0e0; background-color: #f9f9f9; padding: 30px 40px; font-size: 0.9em; }
+    .bib-item { margin-bottom: 15px; padding-left: 20px; text-indent: -20px; }
+
+</style>
+</head>
+<body>
+
+<div class="main-container">
+    <div class="header-banner">
+        <h1>UNIVERSIDAD INDUSTRIAL DE SANTANDER</h1>
+        <h2>Escuela de Biología | Asignatura: Fisiología Animal (20073) | Semestre 2026-2</h2>
+        <p>Docente: Prof. Sergio Andrés Marchant, Ph.D.</p>
+    </div>
+    
+    <div class="content-section">
+        <h2 class="section-title">Práctico 3: Tipologías de Artículos y Escritura del Minireview Científico</h2>
+        
+        <p>
+            Tras haber conformado una robusta base de datos bibliográfica y haber diseccionado críticamente la literatura primaria, llegamos a la <strong>Etapa 3 de nuestro Proyecto Semestral: la redacción del Minireview</strong>. 
+        </p>
+        <p>
+            Escribir ciencia es tan importante como realizar los experimentos empíricos en el laboratorio o en campo. Como estudiantes de pregrado, desarrollar esta competencia les permitirá no solo generar nuevos datos en el futuro, sino evaluar, organizar y sintetizar el conocimiento acumulado para detectar patrones y vacíos de información. En esta sesión, aprenderemos a estructurar una revisión bibliográfica paso a paso, dominando desde la anatomía de un párrafo hasta las estrictas normas de publicación de una revista internacional.
+        </p>
+
+        <h3>OBJETIVOS DE APRENDIZAJE</h3>
+        <ul style="line-height: 1.7;">
+            <li><strong>Reconocer</strong> los diferentes tipos de publicaciones científicas y comprender el objetivo particular de una revisión bibliográfica.</li>
+            <li><strong>Aplicar</strong> los lineamientos PRISMA para estructurar metodológicamente la búsqueda, selección y filtrado de la literatura científica.</li>
+            <li><strong>Dominar</strong> la anatomía interna del párrafo (oración principal, oraciones de soporte y transición) para construir una narrativa argumentativa.</li>
+            <li><strong>Redactar</strong> priorizando el protagonismo de la información biológica empírica, ubicando a los autores y la referencia en el formato de citación correspondiente sin interrumpir el flujo del texto.</li>
+            <li><strong>Comprender y ejecutar</strong> el flujo cronológico e inductivo de la escritura científica y los requerimientos específicos para cada sección según las guías internacionales.</li>
+            <li><strong>Escribir y formatear</strong> un manuscrito completo, incluyendo tablas y figuras correctamente legendadas, adoptando las directrices de publicación de la revista PLOS ONE (incluyendo citación numérica).</li>
+        </ul>
+    </div>
+
+    <div class="content-section">
+        <h2 class="section-title">1. Ecosistema de la Publicación Científica</h2>
+        <p>
+            Para escribir de manera efectiva, primero debemos entender qué tipo de documento estamos produciendo. No todos los artículos tienen el mismo propósito ni se evalúan bajo los mismos criterios:
+        </p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 25%;">Tipo de Artículo</th>
+                    <th>Propósito y Características Principales</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Research Article (Artículo Original)</strong></td>
+                    <td>Presenta <strong>investigación experimental primaria, original e inédita</strong>. Incluye métodos de laboratorio detallados, experimentación con animales y análisis estadístico de datos nuevos.</td>
+                </tr>
+                <tr>
+                    <td><strong>Review Article (Revisión Bibliográfica)</strong></td>
+                    <td><strong>(El enfoque de esta sesión).</strong> No aporta nuevos datos empíricos. Recopila, analiza críticamente y sintetiza exhaustivamente la literatura existente (ej. 50+ artículos originales) sobre un tema. Establece el estado del arte y sugiere futuras direcciones de investigación.</td>
+                </tr>
+                <tr>
+                    <td><strong>Short Note / Communication</strong></td>
+                    <td>Publicación breve (usualmente de 2 a 4 páginas) que reporta un hallazgo muy específico, un comportamiento ecológico inusual o la validación rápida de una nueva técnica.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="content-section">
+        <h2 class="section-title">2. Arquitectura Narrativa: El Párrafo y el Protagonismo</h2>
+        <p>
+            La claridad en la escritura científica no nace de usar palabras complejas, sino de estructurar eficientemente las ideas a nivel microestructural: <strong>el párrafo</strong>. Cada párrafo debe ser una unidad lógica independiente que aborda un solo concepto.
+        </p>
+
+        <div class="example-box">
+            <span class="example-header"> ANATOMÍA DE UN PÁRRAFO CIENTÍFICO (T-S-T)</span>
+            <ul style="line-height: 1.7;">
+                <li><strong>1. Topic Sentence (Oración Principal):</strong> Es la primera oración. Le dice al lector inmediatamente de qué va a tratar el párrafo. <br><em>Ejemplo: "La temperatura ambiental es el factor abiótico más determinante en la regulación de la adecuación (fitness) metabólica de los ectotermos neotropicales."</em></li>
+                <li><strong>2. Supporting Sentences (Oraciones de Soporte):</strong> Es el cuerpo del párrafo. Aquí se provee la evidencia empírica extraída de su base de datos para demostrar que la oración principal es cierta. <br><em>Ejemplo: "Múltiples estudios demuestran que un incremento agudo de 5°C duplica el consumo de oxígeno en anuros, reduciendo drásticamente sus reservas de glucógeno muscular a corto plazo [12, 14]."</em></li>
+                <li><strong>3. Transition Sentence (Oración de Transición):</strong> Es la última oración. Resume la implicación biológica y sirve de puente hacia el siguiente párrafo. <br><em>Ejemplo: "Dado este extremo costo energético basal, resulta crucial evaluar cómo estas especies modifican su microhábitat en campo para evitar la exposición térmica directa."</em> (El siguiente párrafo hablará obligatoriamente sobre el comportamiento de termorregulación).</li>
+            </ul>
+        </div>
+
+        <div class="warning-box">
+            <span class="warning-header"> EL PROTAGONISTA ES EL HECHO, NO EL AUTOR</span>
+            <p>
+                Un error muy común en estudiantes de pregrado es escribir como si estuvieran haciendo un resumen biográfico de autores ("Pérez dice X, Gómez encontró Y"). En la redacción científica moderna y en revistas como PLOS ONE, <strong>la información empírica y el hallazgo fisiológico deben ser los protagonistas absolutos</strong>. Los autores van en la cita numérica para no interrumpir el flujo de lectura.
+            </p>
+            <p style="margin-bottom: 5px;">❌ <strong>Formato incorrecto (Centrado en el autor):</strong><br>
+            "Rodríguez y Silva [4] encontraron en su estudio que la respirometría indica un aumento del metabolismo por la temperatura. Luego, Martínez [5] demostró que esto afecta la supervivencia."</p>
+            <p>✅ <strong>Formato correcto (Centrado en la información):</strong><br>
+            "La tasa metabólica basal experimenta un aumento significativo y dependiente de la especie en respuesta a variaciones térmicas agudas [4]. Este desbalance energético repentino tiene repercusiones directas y negativas sobre las tasas de supervivencia poblacional [5]."</p>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <h2 class="section-title">3. Estructura del Manuscrito: Qué incluir en cada sección (PLOS ONE)</h2>
+        <p>
+            La escritura científica real es modular y no lineal. La intuición suele dictar que se escribe desde el Título hasta las Conclusiones, pero los científicos escriben en un orden distinto. A continuación, detallamos <strong>qué debe contener cada sección</strong> siguiendo los lineamientos para autores de <strong>PLOS ONE</strong>, y el <strong>orden recomendado</strong> para redactarlas.
+        </p>
+
+        <div class="concept-box">
+            <h3 style="margin-top: 0; color: #2980b9;">Paso 1: Materials and Methods (El Embudo PRISMA)</h3>
+            <p>
+                En una revisión, la metodología consiste en explicar cómo se buscó, filtró y seleccionó la información documental de forma transparente y reproducible utilizando los criterios PRISMA:
+            </p>
+            <ul>
+                <li><strong>Identificación:</strong> Indique las bases de datos (ej. Web of Science) y reporte las ecuaciones booleanas exactas empleadas (ej. <code>TS=(amphibian* AND thermal tolerance)</code>).</li>
+                <li><strong>Cribado (Screening) y Elegibilidad:</strong> Explique cómo se filtraron los resultados leyendo títulos/resúmenes, y establezca los criterios estrictos de inclusión (ej. "solo se incluyeron estudios experimentales primarios que evaluaran consumo de oxígeno, publicados entre 2015-2026").</li>
+                <li><strong>Inclusión:</strong> Reporte el número final de artículos que componen su base de datos.</li>
+            </ul>
+        </div>
+
+        <div class="concept-box">
+            <h3 style="margin-top: 0; color: #2980b9;">Paso 2: Results, Discussion, Conclusions</h3>
+            <p>
+                PLOS ONE permite presentar estas secciones por separado o combinadas (ej. <em>Results and Discussion</em>). Pueden usar subtítulos para dividir los temas.
+            </p>
+            <ul>
+                <li><strong>Results:</strong> Describa los resultados de los experimentos compilados. Sintetice la información, agrupe tendencias y presente tablas o figuras integradoras. No interprete todavía, solo reporte los hechos.</li>
+                <li><strong>Discussion:</strong> Aquí ocurre la ciencia. Explique cómo los resultados se relacionan con la literatura previa. Compare estudios que se contradicen, ofrezca explicaciones ecofisiológicas y concluya apuntando hacia posibles direcciones futuras de investigación (los vacíos de conocimiento).</li>
+                <li><strong>Conclusions:</strong> (Opcional pero recomendado). Un párrafo sucinto que resuma las implicaciones principales de los hallazgos sin exagerar su impacto.</li>
+            </ul>
+        </div>
+
+        <div class="concept-box">
+            <h3 style="margin-top: 0; color: #2980b9;">Paso 3: Introduction (El Embudo Narrativo)</h3>
+            <p>
+                Ahora que saben exactamente de qué hablaron en la discusión, pueden escribir la introducción. Esta sección debe:
+            </p>
+            <ul>
+                <li>Proveer el contexto (background) para que un lector fuera del campo entienda la importancia del problema.</li>
+                <li>Definir el problema específico que se aborda.</li>
+                <li>Incluir una breve revisión de la literatura clave, notando controversias o desacuerdos en el campo.</li>
+                <li><strong>Concluir con una declaración breve del objetivo principal</strong> de la revisión y un comentario sobre si se logró el objetivo.</li>
+            </ul>
+        </div>
+
+        <div class="concept-box">
+            <h3 style="margin-top: 0; color: #2980b9;">Paso 4: Abstract y Title Page</h3>
+            <p>Se redactan al final del todo para garantizar que resuman con precisión el documento finalizado.</p>
+            <ul>
+                <li><strong>Abstract:</strong> Máximo 300 palabras. Describe los objetivos principales, explica cómo se hizo la revisión (sin mucho detalle metodológico) y resume los resultados más importantes y su significado. <strong>No debe incluir citas bibliográficas.</strong></li>
+                <li><strong>Title Page:</strong> PLOS ONE exige directrices claras:
+                    <ul style="margin-top: 5px;">
+                        <li><strong>Full Title (Título completo):</strong> Máximo 250 caracteres, específico, descriptivo. Escrito en <em>sentence case</em> (solo la primera letra y nombres propios en mayúscula).</li>
+                        <li><strong>Short Title (Título corto):</strong> Máximo 100 caracteres.</li>
+                        <li><strong>Autores y Afiliaciones:</strong> Listados en orden. Cada autor debe tener una afiliación (Departamento, Universidad, Ciudad, País). Se debe designar a un autor de correspondencia con su correo electrónico.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <h2 class="section-title">4. Formato de Tablas y Figuras (La regla de las leyendas)</h2>
+        <p>
+            Las Tablas y las Figuras deben ser autoexplicativas; el lector no debería tener que leer el texto principal para entenderlas. <strong>Existe una regla de oro irrompible para su posicionamiento en el manuscrito:</strong>
+        </p>
+        
+        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 300px;">
+                <h4 style="color: #c0392b;">Regla para Tablas: La leyenda va ARRIBA</h4>
+                <p class="caption-above"><strong>Tabla 1. Comparación de las tasas metabólicas basales (TMB) en tres especies de anfibios aclimatados a diferentes temperaturas.</strong> Los valores representan la media ± desviación estándar. Datos compilados a partir de la revisión de literatura primaria.</p>
+                <table style="margin-top: 0;">
+                    <thead>
+                        <tr>
+                            <th>Especie</th>
+                            <th>Temperatura (°C)</th>
+                            <th>TMB (ml O2/h)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><em>Rhinella marina</em></td><td>20</td><td>1.2 ± 0.3</td></tr>
+                        <tr><td><em>Rhinella marina</em></td><td>30</td><td>2.8 ± 0.4</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div style="flex: 1; min-width: 300px;">
+                <h4 style="color: #2980b9;">Regla para Figuras: La leyenda va ABAJO</h4>
+                <div class="figure-simulation">
+                    [GRÁFICO O ESQUEMA CONCEPTUAL]
+                </div>
+                <p class="caption-below"><strong>Figura 1. Modelo conceptual de la respuesta de estrés en peces de agua dulce.</strong> Las flechas sólidas indican vías endocrinas comprobadas (cortisol), mientras que las flechas punteadas sugieren mecanismos propuestos basados en los estudios de Rodríguez [8].</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-section" style="border-top: 4px solid #c0392b; background-color: #fdfefe;">
+        <h2 class="section-title">5. Instrucciones del Entregable</h2>
+        
+        <p>Para simular el rigor de la publicación real, redactarán su Minireview aplicando las directrices de la revista <strong>PLOS ONE</strong>.</p>
+
+        <div class="warning-box">
+            <span class="warning-header"> REGLAS ESTRICTAS DE FORMATO DEL MINIREVIEW</span>
+            <ul style="font-size: 0.95em; line-height: 1.6;">
+                <li><strong>Longitud y Espaciado:</strong> El manuscrito debe presentarse a <strong>doble espacio (Double-spaced)</strong> en una sola columna. Deben activarse los números de línea continuos (Line numbers) en Microsoft Word.</li>
+                <li><strong>Nomenclatura Biológica:</strong> Los nombres científicos van en <em>cursiva</em>. La primera vez completos (ej. <em>Rhinella marina</em>); luego se permite la abreviación del género (ej. <em>R. marina</em>).</li>
+                <li><strong>ESTILO DE CITACIÓN:</strong> PLOS ONE utiliza el estilo <strong>"Vancouver"</strong> (citas numéricas entre corchetes, ej. <code>[1, 2]</code>). Configuren Mendeley Cite en MS Word bajo este formato para generar su bibliografía automáticamente al final.</li>
+            </ul>
+        </div>
+
+        <div class="analysis-box">
+            <span class="analysis-header"> TAREA DEL LABORATORIO</span>
+            <p>
+                Junto a su pareja de trabajo, construyan el Minireview en Microsoft Word aplicando todo lo aprendido en la guía.
+            </p>
+            <ul style="font-size: 0.95em; font-weight: 500;">
+                <li>El manuscrito debe contener todas las secciones estructuradas: <em>Title Page, Abstract, Introduction, Materials and Methods, Results, Discussion, y Conclusions</em>.</li>
+                <li>La sección de Resultados/Discusión debe sintetizar pertinentemente <strong>al menos 12 artículos primarios experimentales</strong> extraídos de su base de datos.</li>
+                <li>Deben incluir al menos <strong>una Tabla integradora Y una Figura original</strong> (creada por ustedes, no pegada de internet) que consoliden los hallazgos de los artículos leídos, respetando la posición correcta de las leyendas.</li>
+                <li>Empaquete el documento final en formato <strong>PDF</strong> y súbalo a Moodle antes del cierre estipulado.</li>
+            </ul>
+        </div>
+
+        <h3 style="margin-top: 40px;">Rúbrica de Evaluación (Etapa 3 - Minireview)</h3>
+        <p style="font-size: 0.9em; color: #d35400; background-color: #fdf2e9; padding: 10px; border-left: 4px solid #e67e22;">
+            <strong>Nota de Evaluación:</strong> No se descontarán puntos si la pregunta de investigación u objetivo no está redactada explícitamente en formato de pregunta (ej. "¿Cuáles son los efectos...?"). Se evaluará que la coherencia, el hilo conductor y el propósito del artículo sean claros a lo largo de toda la revisión.
+        </p>
+        <table class="table-striped">
+            <thead>
+                <tr>
+                    <th style="width: 20%;">Criterio</th>
+                    <th style="width: 26%;">Excelente (4.0 - 5.0)</th>
+                    <th style="width: 26%;">Bueno (3.0 - 3.9)</th>
+                    <th style="width: 26%;">Deficiente (&lt; 3.0)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Estructura PRISMA y Secciones (25%)</strong></td>
+                    <td>La sección de Métodos relata con precisión las fases del embudo PRISMA (identificación, cribado, elegibilidad, inclusión). El manuscrito contiene todas las secciones exigidas por PLOS ONE (Intro, Abstract, etc.) bien definidas.</td>
+                    <td>La metodología menciona bases de datos pero no detalla los criterios de inclusión/exclusión ni las fases de filtrado sistemático. Falta claridad en alguna sección menor.</td>
+                    <td>No hay sección de métodos o describe equivocadamente metodologías de laboratorio. Omite secciones críticas (ej. Abstract o Intro).</td>
+                </tr>
+                <tr>
+                    <td><strong>Anatomía del Párrafo y Protagonismo (25%)</strong></td>
+                    <td>Párrafos lógicos (Topic/Support/Transition). La información biológica empírica es siempre la protagonista de la redacción. Las citas numéricas respaldan sin interrumpir el flujo.</td>
+                    <td>Párrafos mayormente bien estructurados, pero ocasionalmente caen en el error de centrar la redacción en el autor (ej. "Pérez [4] dice que...").</td>
+                    <td>Párrafos desestructurados y excesivamente largos. Redacción completamente centrada en listar autores en lugar de sintetizar procesos fisiológicos.</td>
+                </tr>
+                <tr>
+                    <td><strong>Síntesis, Figuras y Tablas (25%)</strong></td>
+                    <td>Sintetiza al menos 12 artículos experimentales. Incluye Tabla (leyenda arriba) y Figura (leyenda abajo) originales, bien formateadas y autoexplicativas. La discusión identifica vacíos críticos.</td>
+                    <td>Sintetiza la literatura requerida pero las Tablas o Figuras tienen leyendas mal ubicadas o no son autoexplicativas. Discusión superficial.</td>
+                    <td>No alcanza el mínimo de artículos, omite las tablas/figuras exigidas o copia material gráfico ajeno sin elaboración propia.</td>
+                </tr>
+                <tr>
+                    <td><strong>Formato PLOS ONE y Maquetación (25%)</strong></td>
+                    <td>El manuscrito cumple impecablemente: Citación numérica Vancouver, doble espaciado, números de línea continuos y Title Page estructurada con las reglas de caracteres correctas.</td>
+                    <td>Aplica el estilo numérico, pero presenta fallos menores de formato de revista (ej. omite números de línea o descuida las cursivas taxonómicas).</td>
+                    <td>Ignora las instrucciones: usa formato Autor-Año en el texto, interlineado sencillo, o no incluye Title Page. Documento mal maquetado.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="biblio-section">
+        <h3 style="color: #2c3e50; border-bottom: 2px solid #bdc3c7; padding-bottom: 5px; margin-top: 0;">Referencias Bibliográficas para esta Guía</h3>
+        <div class="bib-item">
+            Gastel, B., & Day, R. A. (2016). <em>How to write and publish a scientific paper</em> (8th ed.). Greenwood.
+        </div>
+        <div class="bib-item">
+            Moher, D., Liberati, A., Tetzlaff, J., Altman, D. G., & PRISMA Group. (2009). Preferred reporting items for systematic reviews and meta-analyses: the PRISMA statement. <em>PLoS Medicine</em>, 6(7), e1000097.
+        </div>
+        <div class="bib-item">
+            PLOS ONE. (n.d.). <em>Submission Guidelines</em>. Recuperado de https://journals.plos.org/plosone/s/submission-guidelines
+        </div>
+        <div class="bib-item">
+            Schimel, J. (2012). <em>Writing Science: how to write papers that get cited and proposals that get funded</em>. Oxford University Press.
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
